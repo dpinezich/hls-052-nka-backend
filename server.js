@@ -86,6 +86,6 @@ app.get('/reset-db', (req, res) => {
   fs.writeFile(fileName, JSON.stringify({}), (error) => {});
 });
 
-app.listen(3000, () => {
-  console.log('Server is up on port 3000');
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is up on port ${(process.env.PORT || 3000)}`);
 });

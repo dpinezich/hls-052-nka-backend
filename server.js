@@ -1,8 +1,11 @@
 const express = require('express');
 var bodyParser = require('body-parser');
 const fs = require('fs');
+const path = require('path');
 
 const app = express();
+
+const fileName = 'db.json';
 
 app.use((req, res, next) => {
   var now = new Date().toString();
@@ -26,7 +29,18 @@ app.get('/', (req, res) => {
 });
 
 app.post('/save', (req, res) => {
-  console.log(req.body);
+  fs.exists(fileName, (exists) => {
+    fs.readFile(fileName, (err, data) => {
+      let allData;
+      if (data) {
+        allData = JSON.parse(data);
+      } else {
+        allData = {data:[]};
+      }
+      allData.data.push(req.body);
+      fs.writeFile(fileName, JSON.stringify(allData),(error) => {});
+    })
+  });
   res.json({
     msg: 'done'
   });

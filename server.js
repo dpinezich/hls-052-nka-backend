@@ -85,6 +85,10 @@ app.get('/download', (req, res) => {
 
 app.get('/reset-db', (req, res) => {
   fs.writeFile(fileName, JSON.stringify({}), (error) => {});
+  res.json({
+    msg: 'done'
+  });
+  r
 });
 
 app.listen(process.env.PORT || 3000, () => {

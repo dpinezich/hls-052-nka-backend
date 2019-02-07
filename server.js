@@ -30,19 +30,20 @@ app.get('/', (req, res) => {
 
 app.post('/save', (req, res) => {
   fs.exists(fileName, (exists) => {
+    let allData = {
+      data: []
+    };
     if (exists) {
       fs.readFile(fileName, (err, data) => {
-        let allData;
         if (data) {
           allData = JSON.parse(data);
-        } else {
-          allData = {
-            data: []
-          };
         }
         allData.data.push(req.body);
         fs.writeFile(fileName, JSON.stringify(allData), (error) => {});
       });
+    } else {
+      allData.data.push(req.body);
+      fs.writeFile(fileName, JSON.stringify(allData), (error) => {});
     }
   });
   res.json({

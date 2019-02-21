@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const stream = require('stream');
 const xlsx = require('node-xlsx').default;
+const mailer = require('./mailer');
 
 const app = express();
 
@@ -45,6 +46,7 @@ app.post('/save', (req, res) => {
       allData.data.push(req.body);
       fs.writeFile(fileName, JSON.stringify(allData), (error) => {});
     }
+    mailer.sendConfirmationMail(req.body.email, req.body.name);//.then((data)=>console.log(data)).catch(err=>console.error('error',err));
   });
   res.json({
     msg: 'done'

@@ -1,7 +1,7 @@
 # Manual test on heroku
 
 ```Bash
-curl -X POST https://hls-052-nka-backend.herokuapp.com/save -H 'Content-Type: application/x-www-form-urlencoded' -H 'cache-control: no-cache' -d 'param1=value1&param2=value2&param3=value3&param4=value4'
+curl -X POST https://hls-052-nka-backend.herokuapp.com/save -H 'Content-Type: application/x-www-form-urlencoded' -H 'cache-control: no-cache' -d 'name=Alex&email=alu%40panter.ch'
 ```
 download xlsx file from heroku: https://hls-052-nka-backend.herokuapp.com/download
 
@@ -14,3 +14,7 @@ example for saving (please replace `[SERVER_URL]` with the actual URL):
 curl -X POST [SERVER_URL]/save -H 'Content-Type: application/x-www-form-urlencoded' -H 'cache-control: no-cache' -d 'param1=value1&param2=value2&param3=value3&param4=value4'
 ```
 - `GET /download` - will download the excel file
+
+# Sending emails
+
+In order to be able to send email you need to copy `.env.sample` to `.env` and adjust the values inside

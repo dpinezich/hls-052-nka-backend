@@ -38,5 +38,8 @@ exports.sendConfirmationMail = async function (email, name) {
     text: emailTextBody,
     html: emailHtmlBody
   };
-  transporter.sendMail(mailOptions, (err, info) => {});
+  transporter.sendMail(mailOptions, (err, info) => {
+    console.log('error', err);
+    console.log('info', info);
+  });
 }

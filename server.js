@@ -1,14 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs');
-const path = require('path');
-const stream = require('stream');
-const xlsx = require('node-xlsx').default;
-const mailer = require('./mailer');
 
 const app = express();
 
-const fileName = 'db.json';
+const routes = require('./routes/routes');
 
 app.use((req, res, next) => {
   var now = new Date().toString();
@@ -23,75 +18,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 })); // for parsing application/x-www-form-urlencoded
 
-app.get('/', (req, res) => {
-  res.json({
-    route: '/'
-  });
-});
-
-app.post('/save', (req, res) => {
-  fs.exists(fileName, (exists) => {
-    let allData = {
-      data: []
-    };
-    if (exists) {
-      fs.readFile(fileName, (err, data) => {
-        if (data) {
-          allData = JSON.parse(data);
-        }
-        allData.data.push(req.body);
-        fs.writeFile(fileName, JSON.stringify(allData), (error) => {});
-      });
-    } else {
-      allData.data.push(req.body);
-      fs.writeFile(fileName, JSON.stringify(allData), (error) => {});
-    }
-    mailer.sendConfirmationMail(req.body.email, req.body.name);//.then((data)=>console.log(data)).catch(err=>console.error('error',err));
-  });
-  res.json({
-    msg: 'done'
-  });
-});
-
-app.get('/download', (req, res) => {
-  fs.exists(fileName, (exists) => {
-    if (exists) {
-      fs.readFile(fileName, (err, data) => {
-        let allData;
-        if (data) {
-          allData = JSON.parse(data)['data'];
-        } else {
-          allData = [];
-        }
-        const excelRows = allData.map((dbRow) => {
-          return Object.values(dbRow);
-        });
-        const buffer = xlsx.build([{
-          name: 'Saved Data',
-          data: excelRows
-        }]);
-        var fileContents = Buffer.from(buffer, "base64");
-        const readStream = new stream.PassThrough();
-        readStream.end(fileContents);
-
-        res.set('Content-disposition', 'attachment; filename=SavedData.xlsx');
-        res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-
-        readStream.pipe(res);
-      });
-    } else {
-      res.send('nothing to show');
-    }
-  });
-});
-
-app.get('/reset-db', (req, res) => {
-  fs.writeFile(fileName, JSON.stringify({}), (error) => {});
-  res.json({
-    msg: 'done'
-  });
-  r
-});
+app.use('/', routes);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is up on port ${(process.env.PORT || 3000)}`);

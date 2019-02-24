@@ -16,7 +16,7 @@ if (process.env.MAIL_SERVER != '' && process.env.MAIL_USER != '') {
   });
 }
 
-exports.sendConfirmationMail = async function (email, name) {
+exports.sendConfirmationMail = async function (email, name, url) {
   if (process.env.MAIL_SERVER == '' || process.env.MAIL_FROM == '') {
     return;
   }
@@ -29,8 +29,8 @@ exports.sendConfirmationMail = async function (email, name) {
       }
     }
   });
-  const emailHtmlBody = await emailTemplate.render('confirmation-mail.html', { name });
-  const emailTextBody = await emailTemplate.render('confirmation-mail.text', { name });
+  const emailHtmlBody = await emailTemplate.render('confirmation-mail.html', { name, url });
+  const emailTextBody = await emailTemplate.render('confirmation-mail.text', { name, url });
   const mailOptions = {
     from: process.env.MAIL_FROM, 
     to: email,

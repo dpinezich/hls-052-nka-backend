@@ -84,14 +84,12 @@ router.get('/download', (req, res) => {
   fs.exists(fileName, (exists) => {
     if (exists) {
       fs.readFile(fileName, (err, data) => {
-        let allData;
+        let allData = {};
         if (data) {
-          allData = JSON.parse(data)['data'];
-        } else {
-          allData = [];
+          allData = JSON.parse(data);
         }
-        const excelRows = allData.map((dbRow) => {
-          return Object.values(dbRow);
+        const excelRows = Object.keys(allData).map((key) => {
+          return Object.values(allData[key]);
         });
         const buffer = xlsx.build([{
           name: 'Saved Data',

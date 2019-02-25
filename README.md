@@ -3,7 +3,7 @@
 ```Bash
 curl -X POST https://hls-052-nka-backend.herokuapp.com/save -H 'Content-Type: application/x-www-form-urlencoded' -H 'cache-control: no-cache' -d 'name=Alex&email=alu%40panter.ch'
 ```
-download xlsx file from heroku: https://hls-052-nka-backend.herokuapp.com/download with the credentials provided in the `.env.sample` file
+download xlsx file from heroku: https://hls-052-nka-backend.herokuapp.com/auth/download with the credentials provided in the `.env.sample` file
 
 # server routes
 

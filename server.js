@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const routes = require('./routes/routes');
+const auth = require('./routes/auth');
 
 app.use((req, res, next) => {
   var now = new Date().toString();
@@ -19,6 +20,7 @@ app.use(bodyParser.urlencoded({
 })); // for parsing application/x-www-form-urlencoded
 
 app.use('/', routes);
+app.use('/auth', auth);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is up on port ${(process.env.PORT || 3000)}`);

@@ -1,13 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-const stream = require('stream');
-const xlsx = require('node-xlsx').default;
 const mailer = require('../mailer');
 const TokenGenerator = require('uuid-token-generator');
 const emailValidator = require('email-validator');
 
-const fileName = 'db.json';
+const fileName = process.env.FILENAME;
 
 router.get('/', (req, res) => {
   res.json({
@@ -81,43 +79,6 @@ router.get('/validate/:token?', (req, res) => {
       msg: 'no token specified'
     });
   }
-});
-
-router.get('/download', (req, res) => {
-  fs.exists(fileName, (exists) => {
-    if (exists) {
-      fs.readFile(fileName, (err, data) => {
-        let allData = {};
-        if (data) {
-          allData = JSON.parse(data);
-        }
-        const excelRows = Object.keys(allData).map((key) => {
-          return Object.values(allData[key]);
-        });
-        const buffer = xlsx.build([{
-          name: 'Saved Data',
-          data: excelRows
-        }]);
-        var fileContents = Buffer.from(buffer, "base64");
-        const readStream = new stream.PassThrough();
-        readStream.end(fileContents);
-
-        res.set('Content-disposition', 'attachment; filename=SavedData' + Date.now() + '.xlsx');
-        res.set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-
-        readStream.pipe(res);
-      });
-    } else {
-      res.send('nothing to show');
-    }
-  });
-});
-
-router.get('/reset-db', (req, res) => {
-  fs.writeFile(fileName, JSON.stringify({}), (error) => {});
-  res.json({
-    msg: 'done'
-  });
 });
 
 function saveData(dataFromFile, clientData, token) {

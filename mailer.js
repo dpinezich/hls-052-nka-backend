@@ -1,7 +1,7 @@
-require('dotenv').config();
-const nodemailer = require("nodemailer");
-const EmailTemplate = require('email-templates');
-const path = require('path');
+import 'dotenv/config';
+import nodemailer from "nodemailer";
+import EmailTemplate from 'email-templates';
+import path from 'path';
 let transporter;
 
 if (process.env.MAIL_SERVER != '' && process.env.MAIL_USER != '') {
@@ -16,7 +16,7 @@ if (process.env.MAIL_SERVER != '' && process.env.MAIL_USER != '') {
   });
 }
 
-exports.sendConfirmationMail = async function (email, name, url) {
+export const sendConfirmationMail = async (email, name, url) => {
   if (process.env.MAIL_SERVER == '' || process.env.MAIL_FROM == '') {
     return;
   }
@@ -32,7 +32,7 @@ exports.sendConfirmationMail = async function (email, name, url) {
   const emailHtmlBody = await emailTemplate.render('confirmation-mail.html', { name, url });
   const emailTextBody = await emailTemplate.render('confirmation-mail.text', { name, url });
   const mailOptions = {
-    from: process.env.MAIL_FROM, 
+    from: process.env.MAIL_FROM,
     to: email,
     subject: 'Confirmation link',
     text: emailTextBody,

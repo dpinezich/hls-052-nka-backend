@@ -1,27 +1,39 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
+import bodyParser from 'body-parser';
+import logger from 'morgan';
 
 const app = express();
+const port = process.env.PORT || 3000;
 
-const routes = require('./routes/routes');
-const auth = require('./routes/auth');
-
-app.use((req, res, next) => {
-  var now = new Date().toString();
-  var log = `${now}: ${req.method} ${req.url}`;
-  console.log(log);
-  next();
-});
-
+/**
+ * USES PLUGINS
+ */
+app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({
   extended: true
 })); // for parsing application/x-www-form-urlencoded
 
-app.use('/', routes);
-app.use('/auth', auth);
+/**
+ * HANDLE UNEXCEPTED ERRORS
+ **/
+process.on('uncaughtException', function(error) {
+  console.log('uncaughtException - ', error);
+});
+process.on('unhandledRejection', function(reason) {
+  console.log('unhandledRejection - ', reason);
+});
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is up on port ${(process.env.PORT || 3000)}`);
+/**
+ * ROUTES
+ */
+import routes from './routes';
+routes(app);
+
+/**
+ * SERVER
+ */
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });

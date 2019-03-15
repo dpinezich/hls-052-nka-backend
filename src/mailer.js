@@ -16,7 +16,7 @@ if (process.env.MAIL_SERVER != '' && process.env.MAIL_USER != '') {
   });
 }
 
-export const sendConfirmationMail = async (email, name, url) => {
+const sendConfirmationMail = async (email, name, url) => {
   if (process.env.MAIL_SERVER == '' || process.env.MAIL_FROM == '') {
     return;
   }
@@ -42,4 +42,8 @@ export const sendConfirmationMail = async (email, name, url) => {
     console.log('error', err);
     console.log('info', info);
   });
-}
+};
+
+export const mailer = {
+  sendConfirmationMail
+};

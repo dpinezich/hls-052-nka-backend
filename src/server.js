@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
+import cors from "cors";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -8,6 +9,7 @@ const port = process.env.PORT || 3000;
 /**
  * USES PLUGINS
  */
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()); // for parsing application/json

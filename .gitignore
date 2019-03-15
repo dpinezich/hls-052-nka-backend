@@ -2,4 +2,5 @@
 *.log
 db.json
 .env
-yarn.lock
+.DS_Store
+/dist/

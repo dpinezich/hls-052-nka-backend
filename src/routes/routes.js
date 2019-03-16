@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import fs from "fs";
-import mailer from "../mailer";
+import {mailer} from "../mailer";
 import {successResponse, fileNotExist, errorResponse} from "../libs/responder";
 import TokenGenerator from "uuid-token-generator";
 import emailValidator from "email-validator";

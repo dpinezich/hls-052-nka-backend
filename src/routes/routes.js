@@ -38,7 +38,7 @@ module.exports = app => {
         saveData(allData, req.body, token);
       }
       const url = `http${req.secure ? 's' : ''}://${req.headers.host}/validate/${token}`
-      mailer.sendConfirmationMail(req.body.email, req.body.name, url);
+      mailer.sendConfirmationMail(url, req.body);
 
       return successResponse(res, {
         msg: "done"
@@ -66,15 +66,14 @@ module.exports = app => {
       if (allData[token]) {
         allData[token]["validated"] = 1;
         fs.writeFile(fileName, JSON.stringify(allData), error => {});
-
-        return successResponse(res, {
-          msg: "validated"
-        });
+        const {camp, lang, gender, last_name } = allData[token];
+        let redirectUrl = process.env.REDIRECT_URL + token;
+        redirectUrl += '?lang=' + lang + '&camp=' + camp;
+        redirectUrl += '&gender=' + gender + '&name=' + last_name;
+        return res.redirect(redirectUrl);
       }
 
-      return errorResponse(res, {
-        msg: "no data"
-      });
+      return errorResponse(res, 'invalid token');
     });
   });
 

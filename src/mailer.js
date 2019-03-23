@@ -16,7 +16,7 @@ if (process.env.MAIL_SERVER != '' && process.env.MAIL_USER != '') {
   });
 }
 
-const sendConfirmationMail = async (email, name, url) => {
+const sendConfirmationMail = async (url, {last_name, email, gender}) => {
   if (process.env.MAIL_SERVER == '' || process.env.MAIL_FROM == '') {
     return;
   }
@@ -29,8 +29,8 @@ const sendConfirmationMail = async (email, name, url) => {
       }
     }
   });
-  const emailHtmlBody = await emailTemplate.render('confirmation-mail.html', { name, url });
-  const emailTextBody = await emailTemplate.render('confirmation-mail.text', { name, url });
+  const emailHtmlBody = await emailTemplate.render('confirmation-mail.html', { last_name, gender, email, url });
+  const emailTextBody = await emailTemplate.render('confirmation-mail.text', { last_name, gender, email, url });
   const mailOptions = {
     from: process.env.MAIL_FROM,
     to: email,

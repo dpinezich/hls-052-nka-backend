@@ -27,15 +27,17 @@ module.exports = app => {
     fs.exists(fileName, exists => {
       const token = new TokenGenerator(256, TokenGenerator.BASE62).generate();
       let allData = {};
+      const { gender, first_name, last_name, email, street, city, interest, camp, lang } = req.body;
+      const dataToSave = { gender, first_name, last_name, email, street, city, interest, camp, lang, validated: false }
       if (exists) {
         fs.readFile(fileName, (err, data) => {
           if (data) {
             allData = JSON.parse(data);
           }
-          saveData(allData, req.body, token);
+          saveData(allData, dataToSave, token);
         });
       } else {
-        saveData(allData, req.body, token);
+        saveData(allData, dataToSave, token);
       }
       const url = `http${req.secure ? 's' : ''}://${req.headers.host}/validate/${token}`
       mailer.sendConfirmationMail(url, req.body);

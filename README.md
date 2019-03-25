@@ -5,7 +5,7 @@ curl -X POST https://hls-052-nka-backend.herokuapp.com/save -H 'Content-Type: ap
 ```
 download xlsx file from heroku: https://hls-052-nka-backend.herokuapp.com/auth/download with the credentials provided in the `.env.sample` file
 
-# server routes
+# Server routes
 
 - `GET /` - returns the route name
 - `POST /save` - you need to send some params to this route and they will be saved in `db.json` file. For the time being i am saving all the params that are sent. When we will have the form defined will allow only those params
@@ -18,3 +18,22 @@ curl -X POST [SERVER_URL]/save -H 'Content-Type: application/x-www-form-urlencod
 # Sending emails
 
 In order to be able to send email you need to copy `.env.sample` to `.env` and adjust the values inside
+
+# Run email previews
+```
+$ npm run start-emails
+```
+
+Browser will automatically opens the list of templates in http://localhost:3000
+
+## Translation part
+```
+$ npm run start-emails --lang=en
+```
+
+`--lang=en` is default
+
+## Build emails for each lang
+```
+$ npm run emails-build
+```

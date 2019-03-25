@@ -1,0 +1,210 @@
+{
+    "servicenav": {
+        "contact": {
+            "contact": "Contact",
+            "formular": "Formulaire de contact",
+            "locations": "Sites",
+            "phone": "058 340 91 15",
+            "consultation": "E-mail",
+            "customers": "Devenir client maintenant",
+            "contact_form_link": "https:\/\/www.helsana.ch\/fr\/prives\/service-clients\/contact\/formulaires\/interesses\/conseil-en-assurance\/form",
+            "location_url": "https:\/\/www.helsana.ch\/fr\/prives\/service-clients\/contact\/sites\/points-ventes\/form"
+        },
+        "languages": {
+            "de": "DE",
+            "fr": "FR",
+            "it": "IT",
+            "en": "EN"
+        },
+        "homeicontext": "HOME"
+    },
+    "logo": {
+        "link": "https:\/\/www.helsana.ch\/fr"
+    },
+    "navbar": {
+        "menu": "Menu"
+    },
+    "intro": {
+        "ausland": {
+            "title": "Avez-vous besoin de changer de décor?",
+            "text": "",
+            "win": {
+                "title": "",
+                "text": ""
+            }
+        },
+        "complementary_medicine": {
+            "title": "",
+            "text": "",
+            "win": {
+                "title": "",
+                "text": ""
+            }
+        },
+        "wettbewerb": {
+            "title": "Avez-vous besoin de changer de décor?",
+            "text": "",
+            "win": {
+                "title": "",
+                "text": ""
+            }
+        }
+    },
+    "form": {
+        "gender": {
+            "female": "",
+            "male": ""
+        },
+        "title": "",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "street": "",
+        "city": "",
+        "interest": {
+            "title": "",
+            "text": "",
+            "interest_1": "",
+            "interest_2": "",
+            "interest_3": "",
+            "interest_4": ""
+        },
+        "confirmations": {
+            "country": "",
+            "terms": "",
+            "conditions_link": ""
+        },
+        "errors": {
+            "gender": "",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "street": "",
+            "city": "",
+            "interest": "",
+            "country": "",
+            "terms": "",
+            "recaptcha": "",
+            "general": ""
+        },
+        "submit": ""
+    },
+    "form_saved": {
+        "title": "",
+        "text": ""
+    },
+    "thank_you": {
+        "title": "",
+        "text": "",
+        "cta_text": "",
+        "information": {
+            "ausland": {
+                "title_1": "",
+                "text_1": "",
+                "title_2": "",
+                "text_2": "",
+                "cta_link": "",
+                "insurance_link": "",
+                "more_info": {
+                    "title": "",
+                    "boxes": {
+                        "1": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "2": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "3": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        }
+                    }
+                }
+            },
+            "complementary_medicine": {
+                "title_1": "",
+                "text_1": "",
+                "title_2": "",
+                "text_2": "",
+                "cta_link": "",
+                "insurance_link": "",
+                "more_info": {
+                    "title": "",
+                    "boxes": {
+                        "1": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "2": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "3": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        }
+                    }
+                }
+            },
+            "wettbewerb": {
+                "title_1": "",
+                "text_1": "",
+                "title_2": "",
+                "text_2": "",
+                "cta_link": "",
+                "insurance_link": "",
+                "more_info": {
+                    "title": "",
+                    "boxes": {
+                        "1": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "2": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        },
+                        "3": {
+                            "image": "",
+                            "text": "",
+                            "link": ""
+                        }
+                    }
+                }
+            }
+        },
+        "questions": {
+            "title": "",
+            "opening_hours": ""
+        }
+    },
+    "footernav": {
+        "legal_text": "Remarques juridiques",
+        "legal_link": "https:\/\/www.helsana.ch\/fr\/1400257383155",
+        "publication_text": "Impressum",
+        "publication_link": "https:\/\/www.helsana.ch\/fr\/1400266690262",
+        "privacy_text": "Protection des données",
+        "privacy_link": "https:\/\/www.helsana.ch\/fr\/1371625850917",
+        "facebook_link": "https:\/\/www.facebook.com\/helsana.fr",
+        "twitter_link": "https:\/\/www.twitter.com\/helsana",
+        "linkedin_link": "https:\/\/www.linkedin.com\/company\/helsana-versicherungen-ag",
+        "xing_link": "https:\/\/www.xing.com\/companies\/helsanaversicherungenag",
+        "youtube_link": "https:\/\/www.youtube.com\/helsana",
+        "googleplus_link": "https:\/\/plus.google.com\/+helsana\/posts"
+    },
+    "site": {
+        "title": "Aide rapide grâce à la protection complète à l’étranger | Helsana",
+        "description": "Des vacances sans soucis grâce à l’assurance-maladie à l’étranger. Profitez de notre couverture complète à l’étranger avec centrale d’appels d’urgence 24h\/24.",
+        "url": "https:\/\/www.helsana.ch\/microsite\/ausland\/#\/?lang=fr"
+    }
+}

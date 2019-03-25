@@ -4,3 +4,4 @@ db.json
 .env
 .DS_Store
 /dist/
+emails/dist

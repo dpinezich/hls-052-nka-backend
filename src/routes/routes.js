@@ -28,7 +28,19 @@ module.exports = app => {
       const token = new TokenGenerator(256, TokenGenerator.BASE62).generate();
       let allData = {};
       const { gender, first_name, last_name, email, street, city, interest, camp, lang } = req.body;
-      const dataToSave = { gender, first_name, last_name, email, street, city, interest, camp, lang, validated: false }
+      const dataToSave = {
+        gender,
+        first_name,
+        last_name,
+        email,
+        street,
+        city,
+        interest,
+        camp,
+        lang,
+        validated: false,
+        signup_time: new Date().getTime()
+      }
       if (exists) {
         fs.readFile(fileName, (err, data) => {
           if (data) {
@@ -67,6 +79,7 @@ module.exports = app => {
 
       if (allData[token]) {
         allData[token]["validated"] = 1;
+        allData[token]["confirmation_time"] = new Date().getTime();
         fs.writeFile(fileName, JSON.stringify(allData), error => {});
         const {camp, lang, gender, last_name } = allData[token];
         let redirectUrl = process.env.REDIRECT_URL;

@@ -4,7 +4,7 @@
             "contact": "Contatto",
             "formular": "Formulario di contatto",
             "locations": "Sedi",
-            "phone": "058 340 91 16",
+            "phone": "058 340 90 14",
             "consultation": "E-mail",
             "customers": "Per diventare clienti",
             "contact_form_link": "https:\/\/www.helsana.ch\/it\/privati\/servizio-alla-clientela\/contatto\/formulari\/interessati\/consulenza-assicurativa\/form",
@@ -13,8 +13,7 @@
         "languages": {
             "de": "DE",
             "fr": "FR",
-            "it": "IT",
-            "en": "EN"
+            "it": "IT"
         },
         "homeicontext": "HOME"
     },
@@ -26,27 +25,27 @@
     },
     "intro": {
         "ausland": {
-            "title": "Hai bisogno di cambiare scenario?",
-            "text": "",
+            "title": "Ha bisogno di staccare dalla routine?",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.\n\nBuona fortuna!",
             "win": {
-                "title": "",
-                "text": ""
+                "title": "In palio:",
+                "text": "un buono viaggio del valore di 1500 franchi"
             }
         },
         "complementary_medicine": {
-            "title": "",
-            "text": "",
+            "title": "Sta cercando il suo equilibrio ideale?",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono per un weekend benessere del valore di 1500 franchi. Basta compilare e inviare. \n\nBuona fortuna!",
             "win": {
-                "title": "",
-                "text": ""
+                "title": "In palio:",
+                "text": "un weekend benessere del valore di 1500 franchi"
             }
         },
         "wettbewerb": {
-            "title": "Hai bisogno di cambiare scenario?",
-            "text": "",
+            "title": "Ha bisogno di staccare dalla routine?",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.\n\nBuona fortuna!",
             "win": {
-                "title": "",
-                "text": ""
+                "title": "In palio:",
+                "text": "un buono viaggio del valore di 1500 franchi"
             }
         }
     },
@@ -55,24 +54,24 @@
             "female": "",
             "male": ""
         },
-        "title": "",
+        "title": "È semplicissimo",
         "first_name": "",
         "last_name": "",
         "email": "",
         "street": "",
         "city": "",
         "interest": {
-            "title": "",
-            "text": "",
-            "interest_1": "",
-            "interest_2": "",
-            "interest_3": "",
-            "interest_4": ""
+            "title": "Quali temi le interessano?",
+            "text": "Il suo feedback è prezioso perché ci consentirà di affrontare ancora meglio le sue esigenze: la invitiamo quindi a indicarci il tema legato alla salute che attualmente preoccupa di più lei o la sua famiglia.",
+            "interest_1": "Protezione all’estero",
+            "interest_2": "Trattamenti alternativi",
+            "interest_3": "Prevenzione della salute",
+            "interest_4": "Correzioni del malposizionamento di denti e mandibola"
         },
         "confirmations": {
             "country": "",
             "terms": "",
-            "conditions_link": ""
+            "conditions_link": "https:\/\/www.helsana.ch\/docs\/nka-condizioni-di-partecipazione.pdf"
         },
         "errors": {
             "gender": "",
@@ -82,110 +81,110 @@
             "street": "",
             "city": "",
             "interest": "",
-            "country": "",
-            "terms": "",
-            "recaptcha": "",
-            "general": ""
+            "country": "Si prega di confermare il campo",
+            "terms": "Si prega di confermare il campo",
+            "recaptcha": "Si prega di confermare il campo",
+            "general": "Per partecipare al concorso, compilare tutti i campi obbligatori"
         },
         "submit": ""
     },
     "form_saved": {
-        "title": "",
-        "text": ""
+        "title": "Quasi finito!",
+        "text": "Confermi la sua partecipazione. Per completare la sua iscrizione, dovrà soltanto aprire l’e-mail che le invieremo alla sua casella di posta e cliccare sul link."
     },
     "thank_you": {
-        "title": "",
-        "text": "",
-        "cta_text": "",
+        "title": "Le auguriamo buona fortuna,\n{{gender}} {{lastName}}",
+        "text": "Confermiamo la sua partecipazione al nostro concorso – siamo felici di averla con noi.\n\nDovrà però attendere fino al 30.09.2019. In seguito scoprirà per e-mail se ha vinto.\n\nGrazie per la sua partecipazione!",
+        "cta_text": "Sapere di più",
         "information": {
             "ausland": {
-                "title_1": "",
-                "text_1": "",
-                "title_2": "",
-                "text_2": "",
-                "cta_link": "",
-                "insurance_link": "",
+                "title_1": "Un infortunio all’estero può costarle caro",
+                "text_1": "Supponiamo che lei stia passeggiando sotto il sole messicano, quando improvvisamente sviene. Diagnosi: collasso cardiocircolatorio. Eppure, dopo aver lasciato l’ospedale, lei impallidisce un’altra volta: la sua assicurazione di base non copre la fattura dell’ambulanza.",
+                "title_2": "L’assicurazione integrativa conviene",
+                "text_2": "Si goda i benefici di una protezione completa all’estero e tanti vantaggi in più. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">TOP<\/a>.",
+                "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-top",
+                "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-top",
                 "more_info": {
-                    "title": "",
+                    "title": "Il nostro impegno per un aiuto immediato all’estero",
                     "boxes": {
                         "1": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
+                            "text": "<b>In breve<\/b>\nLe principali domande con relative risposte.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/faq-copertura-assicurativa-allestero"
                         },
                         "2": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
+                            "text": "<b>Una fortuna nella sfortuna<\/b>\nI casi d’emergenza di tre clienti.",
+                            "link": "https:\/\/www.helsana.ch\/it\/protezione-allestero-casi-demergenza-di-clienti"
                         },
                         "3": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888593768&ssbinary=true",
+                            "text": "<b>Emergenza nella Zillertal<\/b>\nQuando le vacanze sulla neve finiscono con l’elisoccorso.",
+                            "link": "https:\/\/www.helsana.ch\/it\/emergenza-in-montagna"
                         }
                     }
                 }
             },
             "complementary_medicine": {
-                "title_1": "",
-                "text_1": "",
-                "title_2": "",
-                "text_2": "",
-                "cta_link": "",
-                "insurance_link": "",
+                "title_1": "I trattamenti alternativi possono costarle una fortuna",
+                "text_1": "Supponiamo che le brucino gli occhi fino alle lacrime, anche quando non ha sonno. Sospetto: allergia. Sua suocera la spinge a provare l’agopuntura e le raccomanda il suo terapeuta. Eppure ricomincerà subito a strofinarsi gli occhi, non appena si rende conto che la sua assicurazione di base non copre questa prestazione.",
+                "title_2": "L’assicurazione integrativa conviene",
+                "text_2": "Si goda i benefici della copertura dei costi per oltre 70 forme di trattamento di medicina complementare e tanti vantaggi in più. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
+                "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "more_info": {
-                    "title": "",
+                    "title": "Il nostro impegno per il suo trattamento alternativo",
                     "boxes": {
                         "1": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
+                            "text": "<b>In caso di raffreddore da fieno<\/b>\nTrattamento alternativo con l’omeopatia e rimedi simili.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/liberarsi-del-raffreddore-da-fieno"
                         },
                         "2": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
+                            "text": "<b>In breve<\/b>\nMedicina complementare, un’alternativa naturale.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/medicina-complementare-alternativa-naturale"
                         },
                         "3": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
+                            "text": "<b>Di grande attualità<\/b>\nI metodi più apprezzati della medicina complementare.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/metodi-apprezzati-di-medicina-complementare"
                         }
                     }
                 }
             },
             "wettbewerb": {
-                "title_1": "",
-                "text_1": "",
-                "title_2": "",
-                "text_2": "",
-                "cta_link": "",
-                "insurance_link": "",
+                "title_1": "Quando l’assicurazione di base non basta",
+                "text_1": "Ci tiene ad assicurarsi contro ogni evenienza? Preferisce una copertura completa delle sue spese sanitarie? Molte prestazioni, come i metodi di trattamento alternativi o i costi di salvataggio all’estero, non sono coperte dall’assicurazione di base.",
+                "title_2": "L’assicurazione integrativa conviene",
+                "text_2": "Si goda i benefici della copertura dei costi per le più svariate prestazioni che riguardano la sua salute. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
+                "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "more_info": {
-                    "title": "",
+                    "title": "Il nostro impegno per una copertura ottimale",
                     "boxes": {
                         "1": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
+                            "text": "<b>Una fortuna nella sfortuna<\/b>\nI casi d’emergenza di tre clienti.",
+                            "link": "https:\/\/www.helsana.ch\/it\/protezione-allestero-casi-demergenza-di-clienti"
                         },
                         "2": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
+                            "text": "<b>Di grande attualità<\/b>\nI metodi più apprezzati della medicina complementare.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/metodi-apprezzati-di-medicina-complementare"
                         },
                         "3": {
-                            "image": "",
-                            "text": "",
-                            "link": ""
+                            "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
+                            "text": "<b>In breve<\/b>\nLe principali domande con relative risposte.",
+                            "link": "https:\/\/www.helsana.ch\/it\/blog\/faq-copertura-assicurativa-allestero"
                         }
                     }
                 }
             }
         },
         "questions": {
-            "title": "",
-            "opening_hours": ""
+            "title": "Avete delle domande? Vi forniamo volentieri una consulenza personale.",
+            "opening_hours": "Da lunedì a venerdì, dalle ore 8.00 alle ore 18.00."
         }
     },
     "footernav": {
@@ -199,12 +198,30 @@
         "twitter_link": "https:\/\/www.twitter.com\/helsana",
         "linkedin_link": "https:\/\/www.linkedin.com\/company\/helsana-versicherungen-ag",
         "xing_link": "https:\/\/www.xing.com\/companies\/helsanaversicherungenag",
-        "youtube_link": "https:\/\/www.youtube.com\/helsana",
-        "googleplus_link": "https:\/\/plus.google.com\/+helsana\/posts"
+        "youtube_link": "https:\/\/www.youtube.com\/helsana"
     },
     "site": {
         "title": "Aiuto immediato all’estero con la protezione completa | Helsana",
         "description": "Con l’assicurazione per l’estero potete partire tranquilli. Usufruite della nostra protezione completa all’estero con servizio di assistenza 24\/24.",
-        "url": "https:\/\/www.helsana.ch\/microsite\/ausland\/#\/?lang=it"
+        "url": "https:\/\/www.helsana.ch\/microsite\/nka\/#\/?lang=it"
+    },
+    "email": {
+        "subject": "Concorso: basta un clic per partecipare",
+        "preheader-text": "Se non visualizza correttamente questa e-mail, clicchi qui.",
+        "hero-title": "Concorso: basta un clic per partecipare",
+        "salutation": "Gentile",
+        "main-message": "",
+        "follow-text": "per partecipare al concorso la invitiamo a cliccare sul seguente link:",
+        "follow-button": "",
+        "regards": "Cordiali saluti",
+        "your-helsana": "Helsana",
+        "visit-us": "Venga a trovarci:",
+        "footer": {
+            "privacy-policy": "Tutela della privacy",
+            "legal-notice": "Avvertenze legali",
+            "blog": "Blog",
+            "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni. \n\nHelsana Assicurazioni SA \nServizio clienti \nCasella postale \n8081 Zurigo \n+41 58 340 11 11",
+            "email-sent-from": ""
+        }
     }
 }

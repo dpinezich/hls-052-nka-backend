@@ -62,6 +62,7 @@ module.exports = app => {
       req.body.link = url;
       req.body.gender = get(JSON.parse(translations), `form.gender.${req.body.gender}`);
       req.body.subject = get(JSON.parse(translations), 'email.subject');
+      req.body.textBody = get(JSON.parse(translations), 'email.textBody');
       mailer.sendConfirmationMail(url, req.body);
 
       return successResponse(res, {

@@ -18,6 +18,7 @@ const sendConfirmationMail = async (url, body) => {
     from: process.env.MAIL_FROM,
     to: body.email,
     subject: body.subject,
+    text: body.textBody,
     html: replaceAllInEmail(emailHtmlBody, body)
   };
   mailgunConfig.messages().send(mailOptions, function(error, body) {

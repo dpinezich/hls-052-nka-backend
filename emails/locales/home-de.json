@@ -206,6 +206,7 @@
         "url": "https:\/\/www.helsana.ch\/microsite\/nka\/#\/?lang=de"
     },
     "email": {
+        "textBody": "",
         "subject": "Wettbewerb: Ein Klick und Sie sind dabei",
         "preheader-text": "Sollte das E-Mail nicht korrekt angezeigt werden, klicken Sie hier.",
         "hero-title": "Wettbewerb: Ein Klick und Sie sind dabei",

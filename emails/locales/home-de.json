@@ -4,7 +4,7 @@
             "contact": "Kontakt",
             "formular": "Kontaktformular",
             "locations": "Standorte",
-            "phone": "058 12 34 56",
+            "phone": "058 340 90 14",
             "consultation": "E-Mail",
             "customers": "Jetzt Kunde werden",
             "contact_form_link": "https:\/\/www.helsana.ch\/de\/private\/kundenservice\/kontakt\/formulare\/interessierte\/versicherungsberatung\/form",
@@ -13,8 +13,7 @@
         "languages": {
             "de": "DE",
             "fr": "FR",
-            "it": "IT",
-            "en": "EN"
+            "it": "IT"
         },
         "homeicontext": "HOME"
     },
@@ -27,7 +26,7 @@
     "intro": {
         "ausland": {
             "title": "Brauchen Sie einen Tapetenwechsel?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!\n",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Reisegutschein im Wert von CHF 1500"
@@ -35,7 +34,7 @@
         },
         "complementary_medicine": {
             "title": "Suchen Sie Ihren idealen Ausgleich?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Gutschein für ein Wellness-Wochenende im Wert von CHF 1500. Einfach ausfüllen und abschicken. \n\nViel Glück!\n",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Gutschein für ein Wellness-Wochenende im Wert von CHF 1500. Einfach ausfüllen und abschicken. \n\nViel Glück!",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Wellness-Wochenende im Wert von CHF 1500"
@@ -43,7 +42,7 @@
         },
         "wettbewerb": {
             "title": "Brauchen Sie einen Tapetenwechsel?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!\n",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Reisegutschein im Wert von CHF 1500"
@@ -72,7 +71,7 @@
         "confirmations": {
             "country": "Ich bestätige, dass ich in der Schweiz wohnhaft bin",
             "terms": "Ich möchte am Wettbewerb teilnehmen und akzeptiere die <a href=\"{{conditions_link}}\" target=\"_blank\" class=\"white\" (onclick)=\"stopPropagation($event)\">Teilnahmebedingungen<\/a>*",
-            "conditions_link": "https:\/\/google.com"
+            "conditions_link": "https:\/\/www.helsana.ch\/docs\/nka-teilnahmebedingungen.pdf"
         },
         "errors": {
             "gender": "Bitte geben Sie Ihr Geschlecht an",
@@ -81,21 +80,21 @@
             "email": "Bitte geben Sie Ihre E-Mail Adresse ein",
             "street": "Bitte geben Sie Ihre Strasse ein",
             "city": "Bitte geben Sie Ihren Wohnort ein",
-            "interest": "Bitte geben Sie Ihren Wohnort ein",
+            "interest": "Bitte geben Sie Ihr Interesse an",
             "country": "Bitte bestätigen Sie das Feld",
             "terms": "Bitte bestätigen Sie das Feld",
             "recaptcha": "Bitte bestätigen Sie das Feld",
-            "general": "Bitte füllen Sie alle Pflichtfelder aus, um am Wettbewerb teilnhemen zu können"
+            "general": "Bitte füllen Sie alle Pflichtfelder aus, um am Wettbewerb teilnehmen zu können"
         },
         "submit": "Teilnehmen"
     },
     "form_saved": {
         "title": "Fast geschafft!",
-        "text": "Bitte bestätigen Sie Ihre Teilnahme. Einfach E-Mail in Ihrem Postfach öffnen, auf den Link klicken – schon sind Sie angemeldet.\r\n\r\nViel Glück!"
+        "text": "Bitte bestätigen Sie Ihre Teilnahme. Einfach E-Mail in Ihrem Postfach öffnen, auf den Link klicken – schon sind Sie angemeldet."
     },
     "thank_you": {
-        "title": "Wir drücken Ihnen die Daumen, liebe {{gender}} {{lastName}}",
-        "text": "Gerne bestätigen wir, dass Sie an unserem Wettbewerb teilnehmen – schön, sind Sie dabei. Bis am 30.09.2019 müssen Sie sich noch gedulden. Dann erfahren Sie per E-Mail, ob Sie gewonnen haben.\r\n\r\nVielen Dank für Ihre Teilnahme!",
+        "title": "Wir drücken Ihnen die Daumen, \nliebe {{gender}} {{lastName}}",
+        "text": "Gerne bestätigen wir, dass Sie an unserem Wettbewerb teilnehmen – schön, sind Sie dabei.\n\nBis am 30.09.2019 müssen Sie sich noch gedulden. Dann erfahren Sie per E-Mail, ob Sie gewonnen haben.\n\nVielen Dank für Ihre Teilnahme!",
         "cta_text": "Mehr erfahren",
         "information": {
             "ausland": {
@@ -103,24 +102,24 @@
                 "text_1": "Angenommen Sie flanieren unter der mexikanischen Sonne und fallen in Ohnmacht. Diagnose: Kreislaufkollaps. Nach dem Spitalaufenthalt werden Sie schon wieder blass – die Rechnung für die Ambulanz deckt Ihre Grundversicherung nicht ab.",
                 "title_2": "Zusatzversicherung lohnt sich",
                 "text_2": "Geniessen Sie vollen Auslandsschutz und viele weitere Vorzüge. Zum Beispiel mit der Zusatzversicherung <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">TOP<\/a>.",
-                "cta_link": "https:\/\/helsana.ch",
-                "insurance_link": "https:\/\/helsana.ch",
+                "cta_link": "https:\/\/www.helsana.ch\/de\/private\/nka-top",
+                "insurance_link": "https:\/\/www.helsana.ch\/de\/private\/nka-top",
                 "more_info": {
                     "title": "Für Ihre schnelle Hilfe im Ausland engagiert",
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "FAQ: Versicherungsschutz im Ausland",
+                            "text": "<b>Kurz erklärt<\/b>\nDie wichtigsten Fragen inklusive Antworten.",
                             "link": "https:\/\/www.helsana.ch\/de\/faq-versicherungsschutz-im-ausland"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "Auslandsschutz: Kunden erzählen von Ihrem Notfall",
+                            "text": "<b>Glück im Unglück<\/b>\nDrei Kunden erzählen von ihrem Notfall.",
                             "link": "https:\/\/www.helsana.ch\/de\/auslandsschutz-kunden-erzaehlen-von-ihrem-notfall"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888593768&ssbinary=true",
-                            "text": "Notfall im Zillertal\n",
+                            "text": "<b>Notfall im Zillertal<\/b>\nAls die Skiferien im Rettungshelikopter endeten.",
                             "link": "https:\/\/www.helsana.ch\/de\/notfall-im-zillertal"
                         }
                     }
@@ -131,24 +130,24 @@
                 "text_1": "Angenommen Ihnen kommen die Tränen, dabei sind Sie putzmunter. Verdacht: Allergie. Ihre Schwiegermutter ermuntert Sie zur Akupunktur und empfiehlt ihren Therapeuten. Und schon wieder reiben Sie sich die Augen, denn diese Leistung wird von Ihrer Grundversicherung nicht abgedeckt.",
                 "title_2": "Zusatzversicherung lohnt sich",
                 "text_2": "Geniessen Sie Kostendeckung bei über 70 komplementärmedizinischen Behandlungsformen und viele weitere Vorzüge. Zum Beispiel mit der Zusatzversicherung <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
-                "cta_link": "https:\/\/helsana.ch",
-                "insurance_link": "https:\/\/helsana.ch",
+                "cta_link": "https:\/\/helsana.ch\/de\/private\/nka-completa",
+                "insurance_link": "https:\/\/helsana.ch\/de\/private\/nka-completa",
                 "more_info": {
                     "title": "Für Ihre alternative Behandlung engagiert",
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "Heuschnupfen mit Homöopathie und Co. loswerden",
-                            "link": "https:\/\/helsana.ch"
+                            "text": "<b>Bei Heuschnupfen<\/b>\nAlternative Behandlung mit Homöopathie und Co.",
+                            "link": "https:\/\/www.helsana.ch\/de\/blog\/heuschnupfen-loswerden"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "Komplementärmedizin als natürliche Alternative",
-                            "link": "https:\/\/helsana.ch"
+                            "text": "<b>Kurz erklärt<\/b>\nKomplementärmedizin als natürliche Alternative.",
+                            "link": "https:\/\/www.helsana.ch\/de\/blog\/komplementaermedizin-als-natuerliche-alternative"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "Beliebte komplementärmedizinische Methoden",
+                            "text": "<b>Hoch im Kurs<\/b>\nBeliebte Methoden der Komplementärmedizin.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/beliebte-komplementaermedizinische-methoden"
                         }
                     }
@@ -159,24 +158,24 @@
                 "text_1": "Sind Sie gerne vollumfänglich abgesichert? Bevorzugen Sie eine volle Deckung Ihrer Gesundheitskosten? Viele Leistungen wie alternative Behandlungsmethoden oder Rettungskosten im Ausland werden von der Grundversicherung nicht abgedeckt.",
                 "title_2": "Zusatzversicherung lohnt sich",
                 "text_2": "Geniessen Sie die Kostendeckung für die verschiedensten Leistungen rund um Ihre Gesundheit. Zum Beispiel mit der Zusatzversicherung <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
-                "cta_link": "https:\/\/helsana.ch",
-                "insurance_link": "https:\/\/helsana.ch",
+                "cta_link": "https:\/\/helsana.ch\/de\/private\/nka-completa",
+                "insurance_link": "https:\/\/helsana.ch\/de\/private\/nka-completa",
                 "more_info": {
                     "title": "Für Ihren vollumfänglichen Schutz engagiert",
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "Auslandsschutz: Kunden erzählen von Ihrem Notfall",
+                            "text": "<b>Glück im Unglück<\/b>\nDrei Kunden erzählen von ihrem Notfall.",
                             "link": "https:\/\/www.helsana.ch\/de\/auslandsschutz-kunden-erzaehlen-von-ihrem-notfall"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "Beliebte komplementärmedizinische Methoden",
+                            "text": "<b>Hoch im Kurs<\/b>\nBeliebte Methoden der Komplementärmedizin.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/beliebte-komplementaermedizinische-methoden"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "FAQ: Versicherungsschutz im Ausland",
+                            "text": "<b>Kurz erklärt<\/b>\nDie wichtigsten Fragen inklusive Antworten.",
                             "link": "https:\/\/www.helsana.ch\/de\/faq-versicherungsschutz-im-ausland"
                         }
                     }
@@ -184,7 +183,7 @@
             }
         },
         "questions": {
-            "title": "Haben Sie Fragen? Gerne helfen wir Ihnen weiter",
+            "title": "Haben Sie Fragen? Gerne beraten wir Sie persönlich.",
             "opening_hours": "Montag bis Freitag zwischen 8 und 18 Uhr."
         }
     },
@@ -199,30 +198,29 @@
         "twitter_link": "https:\/\/www.twitter.com\/helsana",
         "linkedin_link": "https:\/\/www.linkedin.com\/company\/helsana-versicherungen-ag",
         "xing_link": "https:\/\/www.xing.com\/companies\/helsanaversicherungenag",
-        "youtube_link": "https:\/\/www.youtube.com\/helsana",
-        "googleplus_link": "https:\/\/plus.google.com\/+helsana\/posts"
+        "youtube_link": "https:\/\/www.youtube.com\/helsana"
     },
     "site": {
         "title": "Rasche Hilfe im Ausland dank Rundum-Auslandsschutz | Helsana",
         "description": "Dank Auslandskrankenversicherung sorglos in die Ferien. Profitieren Sie von unserem Rundum-Auslandsschutz mit 24-Std.-Notrufzentrale.",
-        "url": "https:\/\/www.helsana.ch\/microsite\/ausland\/#\/?lang=de"
+        "url": "https:\/\/www.helsana.ch\/microsite\/nka\/#\/?lang=de"
     },
     "email": {
-        "preheader-text-1": "Preheader Text",
-        "preheader-text-2": "Falls Sie diese E-Mail nicht öffnen können, gelangen Sie hier zu Online Version.",
+        "subject": "Wettbewerb: Ein Klick und Sie sind dabei",
+        "preheader-text": "Sollte das E-Mail nicht korrekt angezeigt werden, klicken Sie hier.",
         "hero-title": "Wettbewerb: Ein Klick und Sie sind dabei",
         "salutation": "Liebe",
-        "main-message": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        "main-message": "",
         "follow-text": "Für Ihre Teilnahme am Wettbewerb klicken Sie bitte auf folgenden Link:",
         "follow-button": "Jetzt teilnehmen",
         "regards": "Freundliche Grüsse",
         "your-helsana": "Ihre Helsana",
         "visit-us": "Besuchen Sie uns:",
         "footer": {
-            "privacy-policy": "Privacy Policy",
+            "privacy-policy": "Schutz der Privatsphäre",
             "legal-notice": "Rechtliche Hinweise",
             "blog": "Blog",
-            "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen, Helsana Zusatzversicherungen, Helsana Unfall und Progrès.",
+            "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen AG, Helsana Zusatzversicherungen AG, Helsana Unfall AG und Progrès Versicherungen AG. \n\nHelsana Versicherungen AG \nKundenservice \nPostfach \n8081 Zürich \n+41 58 340 11 11",
             "email-sent-from": "Diese E-Mail wurde an eine E-Mail gesendet"
         }
     }

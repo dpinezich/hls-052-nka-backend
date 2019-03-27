@@ -4,6 +4,9 @@ import {mailer} from "../mailer";
 import {successResponse, fileNotExist, errorResponse} from "../libs/responder";
 import TokenGenerator from "uuid-token-generator";
 import emailValidator from "email-validator";
+import {readFileAsync} from "../libs/utils";
+import get from 'lodash.get';
+import path from 'path';
 
 const fileName = process.env.FILENAME;
 
@@ -24,7 +27,7 @@ module.exports = app => {
       }, 422);
     }
 
-    fs.exists(fileName, exists => {
+    fs.exists(fileName, async exists => {
       const token = new TokenGenerator(256, TokenGenerator.BASE62).generate();
       let allData = {};
       const { gender, first_name, last_name, email, street, city, interest, camp, lang } = req.body;
@@ -51,7 +54,14 @@ module.exports = app => {
       } else {
         saveData(allData, dataToSave, token);
       }
+      const translations = await readFileAsync(
+        `${path.resolve()}/emails/locales/home-${lang}.json`,
+        'utf8'
+      );
       const url = `http${req.secure ? 's' : ''}://${req.headers.host}/validate/${token}`
+      req.body.link = url;
+      req.body.gender = get(JSON.parse(translations), `form.gender.${req.body.gender}`);
+      req.body.subject = get(JSON.parse(translations), 'email.subject');
       mailer.sendConfirmationMail(url, req.body);
 
       return successResponse(res, {

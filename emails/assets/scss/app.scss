@@ -37,9 +37,23 @@
             width: 30px;
             height: 30px;
             vertical-align: middle;
-            font-weight: 400px;
             color: #666666;
+
+            @media only screen and (max-width: #{$global-breakpoint}) {
+                width: 42px !important;
+                padding-left: 0 !important;
+                a {
+                    width: 100% !important;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+            }
         }
+    }
+    .small-vertical th {
+        padding-left: 0 !important;
     }
 
     .columns {
@@ -63,4 +77,8 @@
 
 hr {
     border: 1px solid #cccccc;
+}
+
+.white-space {
+    white-space: pre-wrap;
 }

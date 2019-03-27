@@ -69,7 +69,7 @@ module.exports = app => {
         allData[token]["validated"] = 1;
         fs.writeFile(fileName, JSON.stringify(allData), error => {});
         const {camp, lang, gender, last_name } = allData[token];
-        let redirectUrl = process.env.REDIRECT_URL + token;
+        let redirectUrl = process.env.REDIRECT_URL;
         redirectUrl += '?lang=' + lang + '&camp=' + camp;
         redirectUrl += '&gender=' + gender + '&name=' + last_name;
         return res.redirect(redirectUrl);

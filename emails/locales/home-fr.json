@@ -51,15 +51,15 @@
     },
     "form": {
         "gender": {
-            "female": "",
-            "male": ""
+            "female": "Madame",
+            "male": "Monsieur"
         },
         "title": "C’est tout simple",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "street": "",
-        "city": "",
+        "first_name": "Prénom",
+        "last_name": "Nom",
+        "email": "E-mail",
+        "street": "Rue",
+        "city": "NPA ou lieu de domicile",
         "interest": {
             "title": "Qu’est-ce qui vous intéresse ?",
             "text": "Afin de pouvoir encore mieux répondre à vos besoins, nous aimerions connaître le sujet qui vous préoccupe le plus, vous ou votre famille, en matière de santé.",
@@ -69,24 +69,24 @@
             "interest_4": "Correction de malposition dentaire ou maxillaire"
         },
         "confirmations": {
-            "country": "",
-            "terms": "",
+            "country": "Je confirme résider en Suisse",
+            "terms": "Je souhaite prendre part au concours et en accepte les <a href=\"{{conditions_link}}\" target=\"_blank\" class=\"white\" (onclick)=\"stopPropagation($event)\">conditions de participation<\/a>",
             "conditions_link": "https:\/\/www.helsana.ch\/docs\/nka-conditions-de-participation.pdf"
         },
         "errors": {
-            "gender": "",
-            "first_name": "",
-            "last_name": "",
-            "email": "",
-            "street": "",
-            "city": "",
-            "interest": "",
+            "gender": "Veuillez saisir votre sexe",
+            "first_name": "Veuillez saisir votre prénom",
+            "last_name": "Veuillez saisir votre nom ",
+            "email": "Veuillez saisir votre adresse e-mail",
+            "street": "Veuillez saisir votre rue",
+            "city": "Veuillez saisir votre lieu de domicile",
+            "interest": "Veuillez saisir votre intérêt",
             "country": "Veuillez confirmer ce champ",
             "terms": "Veuillez confirmer ce champ",
             "recaptcha": "Veuillez confirmer ce champ",
             "general": "Veuillez compléter tous les champs pour participer au concours"
         },
-        "submit": ""
+        "submit": "Participer"
     },
     "form_saved": {
         "title": "Vous avez presque terminé !",
@@ -109,17 +109,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "<b>L’essentiel en bref<\/b>\nLes principales questions et réponses.",
+                            "text": "<b>L’essentiel en bref<\/b><br>Les principales questions et réponses.",
                             "link": "https:\/\/www.helsana.ch\/fr\/faq--couverture-dassurance-a-letranger"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "<b>De la chance dans la malchance<\/b>\nTrois clients témoignent.",
+                            "text": "<b>De la chance dans la malchance<\/b><br>Trois clients témoignent.",
                             "link": "https:\/\/www.helsana.ch\/fr\/protection-a-letranger--temoignages-de-clients"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888593768&ssbinary=true",
-                            "text": "<b>Urgence dans le Zillertal<\/b>\nRetour de vacances de ski en hélicoptère de sauvetage.",
+                            "text": "<b>Urgence dans le Zillertal<\/b><br>Retour de vacances de ski en hélicoptère de sauvetage.",
                             "link": "https:\/\/www.helsana.ch\/fr\/urgence-en-vacances"
                         }
                     }
@@ -137,17 +137,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>En cas de rhume des foins<\/b>\nTraitement alternatif par l’homéopathie et autres.",
+                            "text": "<b>En cas de rhume des foins<\/b><br>Traitement alternatif par l’homéopathie et autres.",
                             "link": "https:\/\/www.helsana.ch\/fr\/blog\/venir-a-bout-du-rhume-des-foins"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>L’essentiel en bref<\/b>\nLa médecine complémentaire, une alternative naturelle.",
+                            "text": "<b>L’essentiel en bref<\/b><br>La médecine complémentaire, une alternative naturelle.",
                             "link": "https:\/\/www.helsana.ch\/fr\/blog\/une-alternative-naturelle"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>En vogue<\/b>\nLes méthodes complémentaires les plus populaires.",
+                            "text": "<b>En vogue<\/b><br>Les méthodes complémentaires les plus populaires.",
                             "link": "https:\/\/www.helsana.ch\/fr\/blog\/methodes-appreciees"
                         }
                     }
@@ -165,17 +165,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "<b>De la chance dans la malchance<\/b>\nTrois clients témoignent.",
+                            "text": "<b>De la chance dans la malchance<\/b><br>Trois clients témoignent.",
                             "link": "https:\/\/www.helsana.ch\/fr\/protection-a-letranger--temoignages-de-clients"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>En vogue<\/b>\nLes méthodes complémentaires les plus populaires.",
+                            "text": "<b>En vogue<\/b><br>Les méthodes complémentaires les plus populaires.",
                             "link": "https:\/\/www.helsana.ch\/fr\/blog\/methodes-appreciees"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "<b>L’essentiel en bref<\/b>\nLes principales questions et réponses.",
+                            "text": "<b>L’essentiel en bref<\/b><br>Les principales questions et réponses.",
                             "link": "https:\/\/www.helsana.ch\/fr\/faq--couverture-dassurance-a-letranger"
                         }
                     }
@@ -201,27 +201,33 @@
         "youtube_link": "https:\/\/www.youtube.com\/helsana"
     },
     "site": {
-        "title": "Aide rapide grâce à la protection complète à l’étranger | Helsana",
-        "description": "Des vacances sans soucis grâce à l’assurance-maladie à l’étranger. Profitez de notre couverture complète à l’étranger avec centrale d’appels d’urgence 24h\/24.",
+        "title": "Participer et gagner un bon attrayant",
+        "description": "Participez au concours d’Helsana et gagnez un prix attrayant d’une valeur de 1500 francs. Découvrez par la même occasion nos assurances complémentaires.",
         "url": "https:\/\/www.helsana.ch\/microsite\/nka\/#\/?lang=fr"
     },
     "email": {
         "subject": "Concours : un clic suffit",
         "preheader-text": "Si l’e-mail ne s’affiche pas correctement, cliquez ici.",
         "hero-title": "Concours : un clic suffit",
-        "salutation": "Madame",
         "main-message": "",
         "follow-text": "Pour participer au concours, cliquez simplement sur le lien suivant :",
-        "follow-button": "",
+        "follow-button": "Participer",
         "regards": "Cordialement",
         "your-helsana": "Helsana",
         "visit-us": "Venez nous rendre visite :",
         "footer": {
-            "privacy-policy": "Protection sphère privée",
+            "privacy-policy": "Protezione dei dati",
             "legal-notice": "Remarques juridiques",
             "blog": "Blog",
             "helsana-insurance": "Le Groupe Helsana comprend Helsana Assurances SA, Helsana Assurances complémentaires SA, Helsana Accidents SA et Progrès Assurances SA. \n\nHelsana Assurances SA \nService Clientèle \nCase postale \n8081 Zurich \n+41 58 340 11 11",
-            "email-sent-from": ""
-        }
+            "email-sent-from": "Cet e-mail a été envoyé à mustermann@example.com."
+        },
+        "textBody": "",
+        "salutation": {
+            "male": "Monsieur",
+            "female": "Madame"
+        },
+        "female": "",
+        "male": ""
     }
 }

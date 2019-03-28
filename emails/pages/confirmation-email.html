@@ -11,7 +11,8 @@
 </container>
 
 <container class="main-bg">
-  <img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/hero.png">
+  <img class="hero-img" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-large.jpg">
+  <img class="hero-img hero-img-mobile" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-mobile.jpg">
   <row>
     <columns>
       <spacer size="40"></spacer>
@@ -20,7 +21,7 @@
 
       <spacer size="4"></spacer>
 
-      <strong>{{i18n 'email.salutation'}} {gender} {last_name}</strong>
+      <strong>{salutation}</strong>
       <p>{{i18n 'email.main-message'}}</p>
 
       <spacer size="20"></spacer>

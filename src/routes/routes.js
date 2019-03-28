@@ -81,13 +81,34 @@ module.exports = app => {
         req.headers.host
       }/validate/${token}`;
       dataToSave.link = req.body.link = url;
-      req.body.gender = get(
+      dataToSave.gender = get(
         JSON.parse(translations),
         `form.gender.${req.body.gender}`
       );
+      dataToSave.hero_img = 'hero.png';
+      switch (camp) {
+        case 'ausland':
+          dataToSave.hero_img = 'ausland.jpg';
+          break;
+        case 'komplementaer':
+          dataToSave.hero_img = 'komplementaer.jpg';
+          break;
+        case 'wettbewerb':
+          dataToSave.hero_img = 'wettbewerb.jpg';
+          break;
+      }
+
+      if (lang === 'fr') {
+        dataToSave.salutation = get(JSON.parse(translations), `email.salutation.${gender}`);
+      } else {
+        dataToSave.salutation = get(JSON.parse(translations), `email.salutation.${gender}`) + ' ' + dataToSave.gender + ' ' + last_name;
+      }
       dataToSave.subject = req.body.subject = get(JSON.parse(translations), "email.subject");
       dataToSave.textBody = req.body.textBody = get(JSON.parse(translations), "email.textBody");
       dataToSave.htmlBody = req.body.htmlBody = replaceAllInEmail(emailHtmlBody, dataToSave);
+
+      delete dataToSave.hero_img;
+      delete dataToSave.salutation;
 
       if (exists) {
         fs.readFile(fileName, (err, data) => {

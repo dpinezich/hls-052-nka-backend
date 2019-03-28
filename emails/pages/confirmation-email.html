@@ -11,8 +11,8 @@
 </container>
 
 <container class="main-bg">
-  <img class="hero-img" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-large.jpg">
-  <img class="hero-img hero-img-mobile" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-mobile.jpg">
+  <img class="hero-img" alt="Campaign image large" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-large.jpg">
+  <img class="hero-img hero-img-mobile" alt="Campaign image small" src="https://hls-052-email-cb620.firebaseapp.com/assets/img/{camp}-mobile.jpg">
   <row>
     <columns>
       <spacer size="40"></spacer>
@@ -48,11 +48,11 @@
       <p class="title text-center small-text-left">{{i18n 'email.visit-us'}}</p>
       <center>
         <menu class="text-center small-text-left">
-          <item><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/facebook.png" alt="Facebook"></item>
-          <item><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/twitter.png" alt="Twitter"></item>
-          <item><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/in.png" alt="Linkedin"></item>
-          <item><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/logo-x.png" alt="Logo x"></item>
-          <item><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/youtube.png" alt="Youtube"></item>
+          <item href="{{i18n 'footernav.facebook_link'}}"><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/facebook.png" alt="Facebook"></item>
+          <item href="{{i18n 'footernav.twitter_link'}}"><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/twitter.png" alt="Twitter"></item>
+          <item href="{{i18n 'footernav.linkedin_link'}}"><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/in.png" alt="Linkedin"></item>
+          <item href="{{i18n 'footernav.xing_link'}}"><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/logo-x.png" alt="Logo x"></item>
+          <item href="{{i18n 'footernav.youtube_link'}}"><img src="https://hls-052-email-cb620.firebaseapp.com/assets/img/youtube.png" alt="Youtube"></item>
         </menu>
       </center>
     </columns>
@@ -67,10 +67,10 @@
   <row>
     <columns>
       <menu class="small-vertical">
-        <item class="small-text-left">@ Helsana</item>
-        <item class="small-text-left">{{i18n 'email.footer.privacy-policy'}}</item>
-        <item class="small-text-left">{{i18n 'email.footer.legal-notice'}}</item>
-        <item class="small-text-left">{{i18n 'email.footer.blog'}}</item>
+        <item class="small-text-left" href="{{i18n 'site.url'}}">@ Helsana</item>
+        <item class="small-text-left" href="{{i18n 'footernav.privacy_link'}}">{{i18n 'email.footer.privacy-policy'}}</item>
+        <item class="small-text-left" href="{{i18n 'footernav.legal_link'}}">{{i18n 'email.footer.legal-notice'}}</item>
+        <item class="small-text-left" href="{{i18n 'footernav.publication_link'}}">{{i18n 'email.footer.blog'}}</item>
       </menu>
     </columns>
   </row>

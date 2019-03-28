@@ -75,7 +75,7 @@
         },
         "errors": {
             "gender": "Bitte geben Sie Ihr Geschlecht an",
-            "first_name": "Bitte geben Sie Ihren Namen ein",
+            "first_name": "Bitte geben Sie Ihren Vornamen ein",
             "last_name": "Bitte geben Sie Ihren Namen ein",
             "email": "Bitte geben Sie Ihre E-Mail Adresse ein",
             "street": "Bitte geben Sie Ihre Strasse ein",
@@ -109,17 +109,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "<b>Kurz erklärt<\/b>\nDie wichtigsten Fragen inklusive Antworten.",
+                            "text": "<b>Kurz erklärt<\/b><br>Die wichtigsten Fragen inklusive Antworten.",
                             "link": "https:\/\/www.helsana.ch\/de\/faq-versicherungsschutz-im-ausland"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "<b>Glück im Unglück<\/b>\nDrei Kunden erzählen von ihrem Notfall.",
+                            "text": "<b>Glück im Unglück<\/b><br>Drei Kunden erzählen von ihrem Notfall.",
                             "link": "https:\/\/www.helsana.ch\/de\/auslandsschutz-kunden-erzaehlen-von-ihrem-notfall"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888593768&ssbinary=true",
-                            "text": "<b>Notfall im Zillertal<\/b>\nAls die Skiferien im Rettungshelikopter endeten.",
+                            "text": "<b>Notfall im Zillertal<\/b><br>Als die Skiferien im Rettungshelikopter endeten.",
                             "link": "https:\/\/www.helsana.ch\/de\/notfall-im-zillertal"
                         }
                     }
@@ -137,17 +137,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>Bei Heuschnupfen<\/b>\nAlternative Behandlung mit Homöopathie und Co.",
+                            "text": "<b>Bei Heuschnupfen<\/b><br>Alternative Behandlung mit Homöopathie und Co.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/heuschnupfen-loswerden"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>Kurz erklärt<\/b>\nKomplementärmedizin als natürliche Alternative.",
+                            "text": "<b>Kurz erklärt<\/b><br>Komplementärmedizin als natürliche Alternative.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/komplementaermedizin-als-natuerliche-alternative"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>Hoch im Kurs<\/b>\nBeliebte Methoden der Komplementärmedizin.",
+                            "text": "<b>Hoch im Kurs<\/b><br>Beliebte Methoden der Komplementärmedizin.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/beliebte-komplementaermedizinische-methoden"
                         }
                     }
@@ -165,17 +165,17 @@
                     "boxes": {
                         "1": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888599076&ssbinary=true",
-                            "text": "<b>Glück im Unglück<\/b>\nDrei Kunden erzählen von ihrem Notfall.",
+                            "text": "<b>Glück im Unglück<\/b><br>Drei Kunden erzählen von ihrem Notfall.",
                             "link": "https:\/\/www.helsana.ch\/de\/auslandsschutz-kunden-erzaehlen-von-ihrem-notfall"
                         },
                         "2": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372867738596&ssbinary=true",
-                            "text": "<b>Hoch im Kurs<\/b>\nBeliebte Methoden der Komplementärmedizin.",
+                            "text": "<b>Hoch im Kurs<\/b><br>Beliebte Methoden der Komplementärmedizin.",
                             "link": "https:\/\/www.helsana.ch\/de\/blog\/beliebte-komplementaermedizinische-methoden"
                         },
                         "3": {
                             "image": "https:\/\/www.helsana.ch\/ss\/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1372888612798&ssbinary=true",
-                            "text": "<b>Kurz erklärt<\/b>\nDie wichtigsten Fragen inklusive Antworten.",
+                            "text": "<b>Kurz erklärt<\/b><br>Die wichtigsten Fragen inklusive Antworten.",
                             "link": "https:\/\/www.helsana.ch\/de\/faq-versicherungsschutz-im-ausland"
                         }
                     }
@@ -201,28 +201,33 @@
         "youtube_link": "https:\/\/www.youtube.com\/helsana"
     },
     "site": {
-        "title": "Rasche Hilfe im Ausland dank Rundum-Auslandsschutz | Helsana",
-        "description": "Dank Auslandskrankenversicherung sorglos in die Ferien. Profitieren Sie von unserem Rundum-Auslandsschutz mit 24-Std.-Notrufzentrale.",
+        "title": "Teilnehmen und attraktiven Gutschein gewinnen",
+        "description": "Nehmen Sie am Wettbewerb von Helsana teil und gewinnen Sie einen attraktiven Preis im Wert von CHF 1500 Franken. Entdecken Sie dabei unsere Zusatzversicherungen.",
         "url": "https:\/\/www.helsana.ch\/microsite\/nka\/#\/?lang=de"
     },
     "email": {
-        "textBody": "",
-        "subject": "Subject",
+        "subject": "Wettbewerb: Ein Klick und Sie sind dabei",
         "preheader-text": "Sollte das E-Mail nicht korrekt angezeigt werden, klicken Sie hier.",
         "hero-title": "Wettbewerb: Ein Klick und Sie sind dabei",
-        "salutation": "Liebe",
         "main-message": "",
         "follow-text": "Für Ihre Teilnahme am Wettbewerb klicken Sie bitte auf folgenden Link:",
-        "follow-button": "Jetzt teilnehmen",
+        "follow-button": "Teilnehmen",
         "regards": "Freundliche Grüsse",
         "your-helsana": "Ihre Helsana",
         "visit-us": "Besuchen Sie uns:",
         "footer": {
-            "privacy-policy": "Schutz der Privatsphäre",
+            "privacy-policy": "Datenschutz",
             "legal-notice": "Rechtliche Hinweise",
             "blog": "Blog",
             "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen AG, Helsana Zusatzversicherungen AG, Helsana Unfall AG und Progrès Versicherungen AG. \n\nHelsana Versicherungen AG \nKundenservice \nPostfach \n8081 Zürich \n+41 58 340 11 11",
-            "email-sent-from": "Diese E-Mail wurde an eine E-Mail gesendet"
-        }
+            "email-sent-from": "Diese E-Mail wurde an mustermann@example.com gesendet."
+        },
+        "textBody": "",
+        "salutation": {
+            "male": "Lieber",
+            "female": "Liebe"
+        },
+        "female": "Frau",
+        "male": "Herr"
     }
 }

@@ -1,17 +1,20 @@
-import 'dotenv/config';
+import "dotenv/config";
 import fs from "fs";
-import {mailer} from "../mailer";
-import {successResponse, fileNotExist, errorResponse} from "../libs/responder";
+import { mailer } from "../mailer";
+import {
+  successResponse,
+  fileNotExist,
+  errorResponse
+} from "../libs/responder";
 import TokenGenerator from "uuid-token-generator";
 import emailValidator from "email-validator";
-import {readFileAsync} from "../libs/utils";
-import get from 'lodash.get';
-import path from 'path';
+import { readFileAsync, replaceAllInEmail } from "../libs/utils";
+import get from "lodash.get";
+import path from "path";
 
 const fileName = process.env.FILENAME;
 
 module.exports = app => {
-
   app.get("/", (req, res) => {
     successResponse(res, {
       route: "/"
@@ -22,15 +25,35 @@ module.exports = app => {
     const email = req.body.email;
 
     if (!email || !emailValidator.validate(email)) {
-      return errorResponse(res, {
-        msg: "invalid email"
-      }, 422);
+      return errorResponse(
+        res,
+        {
+          msg: "invalid email"
+        },
+        422
+      );
     }
 
     fs.exists(fileName, async exists => {
       const token = new TokenGenerator(256, TokenGenerator.BASE62).generate();
       let allData = {};
-      const { gender, first_name, last_name, email, street, city, interest, camp, lang } = req.body;
+      const ip_address =
+        req.ip ||
+        req.headers["x-forwarded-for"] ||
+        req.connection.remoteAddress ||
+        req.socket.remoteAddress ||
+        (req.connection.socket ? req.connection.socket.remoteAddress : null);
+      const {
+        gender,
+        first_name,
+        last_name,
+        email,
+        street,
+        city,
+        interest,
+        camp,
+        lang
+      } = req.body;
       const dataToSave = {
         gender,
         first_name,
@@ -42,8 +65,30 @@ module.exports = app => {
         camp,
         lang,
         validated: false,
-        signup_time: new Date().getTime()
-      }
+        signup_time: new Date().getTime(),
+        confirmation_time: null,
+        ip_address,
+      };
+      const emailHtmlBody = await readFileAsync(
+        `${path.resolve()}/emails/dist/confirmation-email.${lang}.html`,
+        "utf8"
+      );
+      const translations = await readFileAsync(
+        `${path.resolve()}/emails/locales/home-${lang}.json`,
+        "utf8"
+      );
+      const url = `http${req.secure ? "s" : ""}://${
+        req.headers.host
+      }/validate/${token}`;
+      dataToSave.link = req.body.link = url;
+      req.body.gender = get(
+        JSON.parse(translations),
+        `form.gender.${req.body.gender}`
+      );
+      dataToSave.subject = req.body.subject = get(JSON.parse(translations), "email.subject");
+      dataToSave.textBody = req.body.textBody = get(JSON.parse(translations), "email.textBody");
+      dataToSave.htmlBody = req.body.htmlBody = replaceAllInEmail(emailHtmlBody, dataToSave);
+
       if (exists) {
         fs.readFile(fileName, (err, data) => {
           if (data) {
@@ -54,16 +99,8 @@ module.exports = app => {
       } else {
         saveData(allData, dataToSave, token);
       }
-      const translations = await readFileAsync(
-        `${path.resolve()}/emails/locales/home-${lang}.json`,
-        'utf8'
-      );
-      const url = `http${req.secure ? 's' : ''}://${req.headers.host}/validate/${token}`
-      req.body.link = url;
-      req.body.gender = get(JSON.parse(translations), `form.gender.${req.body.gender}`);
-      req.body.subject = get(JSON.parse(translations), 'email.subject');
-      req.body.textBody = get(JSON.parse(translations), 'email.textBody');
-      mailer.sendConfirmationMail(url, req.body);
+
+      mailer.sendConfirmationMail(url, dataToSave);
 
       return successResponse(res, {
         msg: "done"
@@ -92,14 +129,14 @@ module.exports = app => {
         allData[token]["validated"] = 1;
         allData[token]["confirmation_time"] = new Date().getTime();
         fs.writeFile(fileName, JSON.stringify(allData), error => {});
-        const {camp, lang, gender, last_name } = allData[token];
+        const { camp, lang, gender, last_name } = allData[token];
         let redirectUrl = process.env.REDIRECT_URL;
-        redirectUrl += '?lang=' + lang + '&camp=' + camp;
-        redirectUrl += '&gender=' + gender + '&name=' + last_name;
+        redirectUrl += "?lang=" + lang + "&camp=" + camp;
+        redirectUrl += "&gender=" + gender + "&name=" + last_name;
         return res.redirect(redirectUrl);
       }
 
-      return errorResponse(res, 'invalid token');
+      return errorResponse(res, "invalid token");
     });
   });
 

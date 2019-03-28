@@ -1,7 +1,6 @@
 import "dotenv/config";
 import nodemailer from "nodemailer";
 import path from "path";
-import { readFileAsync, replaceAllInEmail } from "./libs/utils";
 import mailgun from "mailgun-js";
 
 const mailgunConfig = mailgun({
@@ -10,16 +9,12 @@ const mailgunConfig = mailgun({
 });
 
 const sendConfirmationMail = async (url, body) => {
-  const emailHtmlBody = await readFileAsync(
-    `${path.resolve()}/emails/dist/confirmation-email.${body.lang}.html`,
-    "utf8"
-  );
   const mailOptions = {
     from: process.env.MAIL_FROM,
     to: body.email,
     subject: body.subject,
     text: body.textBody,
-    html: replaceAllInEmail(emailHtmlBody, body)
+    html: body.htmlBody
   };
   mailgunConfig.messages().send(mailOptions, function(error, body) {
     console.log(error);

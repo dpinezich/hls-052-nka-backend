@@ -1,7 +1,8 @@
 import "dotenv/config";
 import express from "express";
-import xlsx from "node-xlsx";
+import Excel from 'exceljs';
 import stream from "stream";
+import moment from "moment";
 import fs from "fs";
 import basicAuth from "express-basic-auth";
 import { successResponse, errorResponse } from "../libs/responder";
@@ -30,23 +31,43 @@ module.exports = app => {
   app.get("/auth/download", (req, res) => {
     fs.exists(fileName, exists => {
       if (exists) {
-        fs.readFile(fileName, (err, data) => {
+        fs.readFile(fileName, async (err, data) => {
           let allData = {};
           if (data) {
             allData = JSON.parse(data);
           }
+
+          const workbook = new Excel.Workbook();
+          const sheet = workbook.addWorksheet('Saved Data');
+          sheet.columns = [
+            { header: 'Full name', key: 'full_name', width: 20 },
+            { header: 'Email', key: 'email', width: 20 },
+            { header: 'Subject', key: 'subject', width: 20 },
+            { header: 'Email body', key: 'htmlBody', width: 10 },
+            { header: 'Text body', key: 'textBody', width: 10 },
+            { header: 'Link', key: 'link', width: 20 },
+            { header: 'Signup date', key: 'signup_time', width: 20 },
+            { header: 'Confirmation time', key: 'confirmation_time' },
+            { header: 'Validated', key: 'validated' },
+            { header: 'IP address', key: 'ip_address', width: 12 },
+            { header: 'Street', key: 'street' },
+            { header: 'City/Zip', key: 'city' },
+            { header: 'Interest', key: 'interest' },
+            { header: 'Camp', key: 'camp' },
+            { header: 'Lang', key: 'lang' },
+          ];
+
           const excelRows = Object.keys(allData).map(key => {
-            return Object.values(allData[key]);
+            const _data = allData[key];
+            sheet.addRow({
+              ..._data,
+              full_name: `${_data.first_name} ${_data.last_name}`,
+              signup_time: _data.signup_time ? moment(_data.signup_time).format('YYYY-MM-DD HH:mm') : null,
+              confirmation_time: _data.confirmation_time ? moment(_data.confirmation_time).format('YYYY-MM-DD HH:mm') : null,
+              validated: _data.validated ? 'Yes' : 'No',
+            });
+            return ;
           });
-          const buffer = xlsx.build([
-            {
-              name: "Saved Data",
-              data: excelRows
-            }
-          ]);
-          var fileContents = Buffer.from(buffer, "base64");
-          const readStream = new stream.PassThrough();
-          readStream.end(fileContents);
 
           res.set(
             "Content-disposition",
@@ -57,7 +78,8 @@ module.exports = app => {
             "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
           );
 
-          readStream.pipe(res);
+          await workbook.xlsx.write(res);
+          res.end();
         });
       } else {
         errorResponse(res, { msg: "nothing to show" });

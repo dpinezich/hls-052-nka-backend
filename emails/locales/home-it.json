@@ -4,7 +4,7 @@
             "contact": "Contatto",
             "formular": "Formulario di contatto",
             "locations": "Sedi",
-            "phone": "058 340 90 14",
+            "phone": "058 340 90 16",
             "consultation": "E-mail",
             "customers": "Per diventare clienti",
             "contact_form_link": "https:\/\/www.helsana.ch\/it\/privati\/servizio-alla-clientela\/contatto\/formulari\/interessati\/consulenza-assicurativa\/form",
@@ -62,7 +62,7 @@
         "city": "NPA o luogo di domicilio",
         "interest": {
             "title": "Quali temi le interessano?",
-            "text": "Il suo feedback è prezioso perché ci consentirà di affrontare ancora meglio le sue esigenze: la invitiamo quindi a indicarci il tema legato alla salute che attualmente preoccupa di più lei o la sua famiglia.",
+            "text": "Il suo feedback è prezioso perché ci consentirà di affrontare ancora meglio le sue esigenze: la invitiamo quindi a indicarci il tema legato alla salute che attualmente preoccupa di più lei o la sua famiglia.\n\nSelezionare un tema:",
             "interest_1": "Protezione all’estero",
             "interest_2": "Trattamenti alternativi",
             "interest_3": "Prevenzione della salute",
@@ -101,7 +101,7 @@
                 "title_1": "Un infortunio all’estero può costarle caro",
                 "text_1": "Supponiamo che lei stia passeggiando sotto il sole messicano, quando improvvisamente sviene. Diagnosi: collasso cardiocircolatorio. Eppure, dopo aver lasciato l’ospedale, lei impallidisce un’altra volta: la sua assicurazione di base non copre la fattura dell’ambulanza.",
                 "title_2": "L’assicurazione integrativa conviene",
-                "text_2": "Si goda i benefici di una protezione completa all’estero e tanti vantaggi in più. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">TOP<\/a>.",
+                "text_2": "Si goda i benefici di una protezione completa all’estero e tanti vantaggi in più. Per esempio con l’assicurazione integrativa TOP.",
                 "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-top",
                 "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-top",
                 "more_info": {
@@ -129,7 +129,7 @@
                 "title_1": "I trattamenti alternativi possono costarle una fortuna",
                 "text_1": "Supponiamo che le brucino gli occhi fino alle lacrime, anche quando non ha sonno. Sospetto: allergia. Sua suocera la spinge a provare l’agopuntura e le raccomanda il suo terapeuta. Eppure ricomincerà subito a strofinarsi gli occhi, non appena si rende conto che la sua assicurazione di base non copre questa prestazione.",
                 "title_2": "L’assicurazione integrativa conviene",
-                "text_2": "Si goda i benefici della copertura dei costi per oltre 70 forme di trattamento di medicina complementare e tanti vantaggi in più. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "text_2": "Si goda i benefici della copertura dei costi per oltre 70 forme di trattamento di medicina complementare e tanti vantaggi in più. Per esempio con l’assicurazione integrativa COMPLETA.",
                 "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "more_info": {
@@ -157,7 +157,7 @@
                 "title_1": "Quando l’assicurazione di base non basta",
                 "text_1": "Ci tiene ad assicurarsi contro ogni evenienza? Preferisce una copertura completa delle sue spese sanitarie? Molte prestazioni, come i metodi di trattamento alternativi o i costi di salvataggio all’estero, non sono coperte dall’assicurazione di base.",
                 "title_2": "L’assicurazione integrativa conviene",
-                "text_2": "Si goda i benefici della copertura dei costi per le più svariate prestazioni che riguardano la sua salute. Per esempio con l’assicurazione integrativa <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "text_2": "Si goda i benefici della copertura dei costi per le più svariate prestazioni che riguardano la sua salute. Per esempio con l’assicurazione integrativa COMPLETA.",
                 "cta_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "insurance_link": "https:\/\/www.helsana.ch\/it\/privati\/nka-completa",
                 "more_info": {
@@ -219,15 +219,15 @@
             "privacy-policy": "Tutela della privacy",
             "legal-notice": "Avvertenze legali",
             "blog": "Blog",
-            "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni. \n\nHelsana Assicurazioni SA \nServizio clienti \nCasella postale \n8081 Zurigo \n+41 58 340 11 11",
-            "email-sent-from": "Questa e-mail è stata inviata a mustermann@example.com."
+            "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni.",
+            "email-sent-from": "Questa e-mail è stata inviata a {email}."
         },
         "textBody": "",
         "salutation": {
-            "male": "",
-            "female": ""
+            "male": "Egregio signor",
+            "female": "Gentile signora"
         },
-        "female": "",
-        "male": ""
+        "female": "signora",
+        "male": "signor"
     }
 }

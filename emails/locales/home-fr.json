@@ -4,7 +4,7 @@
             "contact": "Contact",
             "formular": "Formulaire de contact",
             "locations": "Sites",
-            "phone": "058 340 90 14",
+            "phone": "058 340 90 15",
             "consultation": "E-mail",
             "customers": "Devenir client maintenant",
             "contact_form_link": "https:\/\/www.helsana.ch\/fr\/prives\/service-clients\/contact\/formulaires\/interesses\/conseil-en-assurance\/form",
@@ -62,7 +62,7 @@
         "city": "NPA ou lieu de domicile",
         "interest": {
             "title": "Qu’est-ce qui vous intéresse ?",
-            "text": "Afin de pouvoir encore mieux répondre à vos besoins, nous aimerions connaître le sujet qui vous préoccupe le plus, vous ou votre famille, en matière de santé.",
+            "text": "Afin de pouvoir encore mieux répondre à vos besoins, nous aimerions connaître le sujet qui vous préoccupe le plus, vous ou votre famille, en matière de santé.\n\nVeuillez choisir un thème :",
             "interest_1": "Protection à l’étranger",
             "interest_2": "Traitements alternatifs",
             "interest_3": "Prévention de la santé",
@@ -101,7 +101,7 @@
                 "title_1": "Un accident à l’étranger peut coûter cher",
                 "text_1": "Vous vous baladez sous le soleil du Mexique et soudain, vous vous effondrez. Diagnostic : perte de connaissance. Après un séjour à l’hôpital, vous avez un nouveau choc : votre assurance de base ne prend pas en charge la facture de l’ambulance.",
                 "title_2": "De l’utilité d’une assurance complémentaire",
-                "text_2": "Bénéficiez d’une protection complète à l’étranger et de nombreux autres avantages. Par exemple avec l’assurance complémentaire <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">TOP<\/a>.",
+                "text_2": "Bénéficiez d’une protection complète à l’étranger et de nombreux autres avantages. Par exemple avec l’assurance complémentaire TOP.",
                 "cta_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-top",
                 "insurance_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-top",
                 "more_info": {
@@ -129,7 +129,7 @@
                 "title_1": "Les traitements alternatifs peuvent coûter cher",
                 "text_1": "Vous avez les yeux qui pleurent, mais vous êtes en bonne santé. Soupçon : allergie. Votre belle-mère vous recommande l’acupuncture et vous donne les coordonnées de son thérapeute. Et voilà que vous larmoyez à nouveau, car cette prestation n’est pas prise en charge par l’assurance de base.",
                 "title_2": "De l’utilité d’une assurance complémentaire",
-                "text_2": "Bénéficiez d’une couverture des coûts pour plus de 70 formes de traitement de médecine complémentaire et de nombreux autres avantages. Par exemple avec l’assurance complémentaire <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "text_2": "Bénéficiez d’une couverture des coûts pour plus de 70 formes de traitement de médecine complémentaire et de nombreux autres avantages. Par exemple avec l’assurance complémentaire COMPLETA.",
                 "cta_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-completa",
                 "insurance_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-completa",
                 "more_info": {
@@ -157,7 +157,7 @@
                 "title_1": "L’assurance de base ne suffit pas toujours",
                 "text_1": "Souhaitez-vous bénéficier d’une protection complète ? Préférez-vous une couverture intégrale de vos frais de santé ? Nombre de prestations, par exemple les méthodes de traitement alternatives ou les frais de sauvetage à l’étranger, ne sont pas couvertes par l’assurance de base.",
                 "title_2": "De l’utilité d’une assurance complémentaire",
-                "text_2": "Bénéficiez d’une couverture des coûts pour de nombreuses prestations de santé. Par exemple avec l’assurance complémentaire <a href=\"{{insurance_link}}\" target=\"_blank\" class=\"dark\">COMPLETA<\/a>.",
+                "text_2": "Bénéficiez d’une couverture des coûts pour de nombreuses prestations de santé. Par exemple avec l’assurance complémentaire COMPLETA.",
                 "cta_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-completa",
                 "insurance_link": "https:\/\/www.helsana.ch\/fr\/prives\/nka-completa",
                 "more_info": {
@@ -219,15 +219,15 @@
             "privacy-policy": "Protezione dei dati",
             "legal-notice": "Remarques juridiques",
             "blog": "Blog",
-            "helsana-insurance": "Le Groupe Helsana comprend Helsana Assurances SA, Helsana Assurances complémentaires SA, Helsana Accidents SA et Progrès Assurances SA. \n\nHelsana Assurances SA \nService Clientèle \nCase postale \n8081 Zurich \n+41 58 340 11 11",
-            "email-sent-from": "Cet e-mail a été envoyé à mustermann@example.com."
+            "helsana-insurance": "Le Groupe Helsana comprend Helsana Assurances SA, Helsana Assurances complémentaires SA, Helsana Accidents SA et Progrès Assurances SA.",
+            "email-sent-from": "Cet e-mail a été envoyé à {email}."
         },
         "textBody": "",
         "salutation": {
             "male": "Monsieur",
             "female": "Madame"
         },
-        "female": "",
-        "male": ""
+        "female": "Monsieur",
+        "male": "Madame"
     }
 }

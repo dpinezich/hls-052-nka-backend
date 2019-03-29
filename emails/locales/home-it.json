@@ -223,8 +223,8 @@
         },
         "textBody": "",
         "salutation": {
-            "male": "Egregio signor",
-            "female": "Gentile signora"
+            "male": "Egregio",
+            "female": "Gentile"
         },
         "female": "signora",
         "male": "signor"

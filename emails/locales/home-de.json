@@ -226,12 +226,6 @@
             "email-sent-from": "Diese E-Mail wurde an {email} gesendet.",
             "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen AG, Helsana Zusatzversicherungen AG, Helsana Unfall AG und Progrès Versicherungen AG."
         },
-        "textBody": "",
-        "salutation": {
-            "male": "Sehr geehrter",
-            "female": "Sehr geehrte"
-        },
-        "female": "Frau",
-        "male": "Herr"
+        "textBody": ""
     }
 }

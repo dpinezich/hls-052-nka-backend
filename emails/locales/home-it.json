@@ -226,12 +226,6 @@
             "email-sent-from": "Questa e-mail è stata inviata a {email}.",
             "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni."
         },
-        "textBody": "",
-        "salutation": {
-            "male": "Egregio",
-            "female": "Gentile"
-        },
-        "female": "signora",
-        "male": "signor"
+        "textBody": ""
     }
 }

@@ -1,7 +1,11 @@
 import fs from 'fs';
 
 export function replaceAllInEmail(string, params) {
-    return string.replace(/{[^{}]+}/g, matched => {
+    let _result = '';
+    _result = string.replace(/\{\{[^\}]*\}\}/g, matched => {
+        return params[matched.replace('{', '').replace('}', '')];
+    });
+    return _result.replace(/{[^{}]+}/g, matched => {
         return params[matched.replace('{', '').replace('}', '')];
     });
 }

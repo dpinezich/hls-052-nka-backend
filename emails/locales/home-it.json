@@ -185,6 +185,10 @@
         "questions": {
             "title": "Avete delle domande? Vi forniamo volentieri una consulenza personale.",
             "opening_hours": "Da lunedì a venerdì, dalle ore 8.00 alle ore 18.00."
+        },
+        "salutation": {
+            "female": "Gentile {{lastName}}",
+            "male": "Egregio {{lastName}}"
         }
     },
     "footernav": {
@@ -219,7 +223,8 @@
             "privacy-policy": "Tutela della privacy",
             "legal-notice": "Avvertenze legali",
             "blog": "Blog",
-            "email-sent-from": "Questa e-mail è stata inviata a {email}."
+            "email-sent-from": "Questa e-mail è stata inviata a {email}.",
+            "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni."
         },
         "textBody": "",
         "salutation": {

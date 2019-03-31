@@ -185,6 +185,10 @@
         "questions": {
             "title": "Haben Sie Fragen? Gerne beraten wir Sie persönlich.",
             "opening_hours": "Montag bis Freitag zwischen 8 und 18 Uhr."
+        },
+        "salutation": {
+            "female": "Sehr geehrte {{lastName}}",
+            "male": "Sehr geehrter {{lastName}}"
         }
     },
     "footernav": {
@@ -219,7 +223,8 @@
             "privacy-policy": "Datenschutz",
             "legal-notice": "Rechtliche Hinweise",
             "blog": "Blog",
-            "email-sent-from": "Diese E-Mail wurde an {email} gesendet."
+            "email-sent-from": "Diese E-Mail wurde an {email} gesendet.",
+            "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen AG, Helsana Zusatzversicherungen AG, Helsana Unfall AG und Progrès Versicherungen AG."
         },
         "textBody": "",
         "salutation": {

@@ -185,6 +185,10 @@
         "questions": {
             "title": "Avez-vous des questions ? Nous sommes à votre disposition !",
             "opening_hours": "Du lundi au vendredi de 8h à 18h."
+        },
+        "salutation": {
+            "female": "Madame",
+            "male": "Monsieur"
         }
     },
     "footernav": {
@@ -219,7 +223,8 @@
             "privacy-policy": "Protezione dei dati",
             "legal-notice": "Remarques juridiques",
             "blog": "Blog",
-            "email-sent-from": "Cet e-mail a été envoyé à {email}."
+            "email-sent-from": "Cet e-mail a été envoyé à {email}.",
+            "helsana-insurance": "Le Groupe Helsana comprend Helsana Assurances SA, Helsana Assurances complémentaires SA, Helsana Accidents SA et Progrès Assurances SA."
         },
         "textBody": "",
         "salutation": {

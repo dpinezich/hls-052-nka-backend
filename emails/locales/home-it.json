@@ -93,7 +93,7 @@
         "text": "Confermi la sua partecipazione. Per completare la sua iscrizione, dovrà soltanto aprire l’e-mail che le invieremo alla sua casella di posta e cliccare sul link."
     },
     "thank_you": {
-        "title": "Le auguriamo buona fortuna,\n{{gender}} {{lastName}}",
+        "title": "Le auguriamo buona fortuna,\n{{salutation}}",
         "text": "Confermiamo la sua partecipazione al nostro concorso – siamo felici di averla con noi.\n\nDovrà però attendere fino al 30.09.2019. In seguito scoprirà per e-mail se ha vinto.\n\nGrazie per la sua partecipazione!",
         "cta_text": "Sapere di più",
         "information": {
@@ -226,6 +226,10 @@
             "email-sent-from": "Questa e-mail è stata inviata a {email}.",
             "helsana-insurance": "Il gruppo Helsana comprende Helsana Assicurazioni SA, Helsana Assicurazioni integrative SA, Helsana Infortuni SA e Progrès Assicurazioni."
         },
-        "textBody": ""
+        "textBody": "",
+        "salutation": {
+            "male": "Egregio {{lastName}}",
+            "female": "Gentile {{lastName}}"
+        }
     }
 }

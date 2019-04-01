@@ -93,7 +93,7 @@
         "text": "Veuillez confirmer votre participation. Ouvrez simplement l’e-mail dans votre boîte de réception, cliquer sur le lien – et vous participez à notre concours."
     },
     "thank_you": {
-        "title": "Nous vous souhaitons bonne chance,\n{{gender}} {{lastName}} !",
+        "title": "Nous vous souhaitons bonne chance,\n{{salutation}}!",
         "text": "Nous confirmons votre participation à notre concours. Merci !\n\nVeuillez patienter jusqu’au 30 septembre 2019. Vous saurez alors par e-mail si vous avez gagné.\n\nMerci de votre participation !",
         "cta_text": "En savoir plus",
         "information": {
@@ -226,6 +226,10 @@
             "email-sent-from": "Cet e-mail a été envoyé à {email}.",
             "helsana-insurance": "Le Groupe Helsana comprend Helsana Assurances SA, Helsana Assurances complémentaires SA, Helsana Accidents SA et Progrès Assurances SA."
         },
-        "textBody": ""
+        "textBody": "",
+        "salutation": {
+            "male": "Monsieur",
+            "female": "Madame"
+        }
     }
 }

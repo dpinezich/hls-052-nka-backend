@@ -93,7 +93,7 @@
         "text": "Bitte bestätigen Sie Ihre Teilnahme. Einfach E-Mail in Ihrem Postfach öffnen, auf den Link klicken – schon sind Sie angemeldet."
     },
     "thank_you": {
-        "title": "Wir drücken Ihnen die Daumen, \nliebe {{gender}} {{lastName}}",
+        "title": "Wir drücken Ihnen die Daumen, \n{{salutation}}",
         "text": "Gerne bestätigen wir, dass Sie an unserem Wettbewerb teilnehmen – schön, sind Sie dabei.\n\nBis am 30.09.2019 müssen Sie sich noch gedulden. Dann erfahren Sie per E-Mail, ob Sie gewonnen haben.\n\nVielen Dank für Ihre Teilnahme!",
         "cta_text": "Mehr erfahren",
         "information": {
@@ -187,8 +187,8 @@
             "opening_hours": "Montag bis Freitag zwischen 8 und 18 Uhr."
         },
         "salutation": {
-            "female": "Sehr geehrte {{lastName}}",
-            "male": "Sehr geehrter {{lastName}}"
+            "female": "sehr geehrte Frau {{lastName}}",
+            "male": "sehr geehrter Herr {{lastName}}"
         }
     },
     "footernav": {
@@ -226,6 +226,10 @@
             "email-sent-from": "Diese E-Mail wurde an {email} gesendet.",
             "helsana-insurance": "Zur Helsana-Gruppe gehören Helsana Versicherungen AG, Helsana Zusatzversicherungen AG, Helsana Unfall AG und Progrès Versicherungen AG."
         },
-        "textBody": ""
+        "textBody": "",
+        "salutation": {
+            "male": "Sehr geehrter Herr {{lastName}}",
+            "female": "Sehr geehrte Frau {{lastName}}"
+        }
     }
 }

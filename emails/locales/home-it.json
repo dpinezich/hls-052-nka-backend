@@ -26,7 +26,7 @@
     "intro": {
         "ausland": {
             "title": "Ha bisogno di staccare dalla routine?",
-            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.\n\nBuona fortuna!",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.",
             "win": {
                 "title": "In palio:",
                 "text": "un buono viaggio del valore di 1500 franchi"
@@ -34,7 +34,7 @@
         },
         "complementary_medicine": {
             "title": "Sta cercando il suo equilibrio ideale?",
-            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono per un weekend benessere del valore di 1500 franchi. Basta compilare e inviare. \n\nBuona fortuna!",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono per un weekend benessere del valore di 1500 franchi. Basta compilare e inviare. ",
             "win": {
                 "title": "In palio:",
                 "text": "un weekend benessere del valore di 1500 franchi"
@@ -42,12 +42,13 @@
         },
         "wettbewerb": {
             "title": "Ha bisogno di staccare dalla routine?",
-            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.\n\nBuona fortuna!",
+            "text": "Partecipi al nostro concorso e, se la dea bendata le è propizia, potrà vincere un buono viaggio del valore di 1500 franchi. Basta compilare e inviare.",
             "win": {
                 "title": "In palio:",
                 "text": "un buono viaggio del valore di 1500 franchi"
             }
-        }
+        },
+        "good_luck": "Buona fortuna!"
     },
     "form": {
         "gender": {
@@ -93,7 +94,7 @@
         "text": "Confermi la sua partecipazione. Per completare la sua iscrizione, dovrà soltanto aprire l’e-mail che le invieremo alla sua casella di posta e cliccare sul link."
     },
     "thank_you": {
-        "title": "Le auguriamo buona fortuna,\n{{salutation}}",
+        "title": "{{salutation}}, le facciamo tanti in bocca al lupo",
         "text": "Confermiamo la sua partecipazione al nostro concorso – siamo felici di averla con noi.\n\nDovrà però attendere fino al 30.09.2019. In seguito scoprirà per e-mail se ha vinto.\n\nGrazie per la sua partecipazione!",
         "cta_text": "Sapere di più",
         "information": {
@@ -211,7 +212,7 @@
     },
     "email": {
         "subject": "Concorso: basta un clic per partecipare",
-        "preheader-text": "Se non visualizza correttamente questa e-mail, clicchi qui.",
+        "preheader-text": "Partecipare adesso e vincere un buono del valore di 1500 franchi.",
         "hero-title": "Concorso: basta un clic per partecipare",
         "main-message": "",
         "follow-text": "per partecipare al concorso la invitiamo a cliccare sul seguente link:",

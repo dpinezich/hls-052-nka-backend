@@ -26,7 +26,7 @@
     "intro": {
         "ausland": {
             "title": "Brauchen Sie einen Tapetenwechsel?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Reisegutschein im Wert von CHF 1500"
@@ -34,7 +34,7 @@
         },
         "complementary_medicine": {
             "title": "Suchen Sie Ihren idealen Ausgleich?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Gutschein für ein Wellness-Wochenende im Wert von CHF 1500. Einfach ausfüllen und abschicken. \n\nViel Glück!",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Gutschein für ein Wellness-Wochenende im Wert von CHF 1500. Einfach ausfüllen und abschicken. ",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Wellness-Wochenende im Wert von CHF 1500"
@@ -42,12 +42,13 @@
         },
         "wettbewerb": {
             "title": "Brauchen Sie einen Tapetenwechsel?",
-            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.\n\nViel Glück!",
+            "text": "Nehmen Sie an unserem Wettbewerb teil und gewinnen Sie mit etwas Glück einen Reisegutschein im Wert von CHF 1500. Einfach ausfüllen und abschicken.",
             "win": {
                 "title": "Zu gewinnen:",
                 "text": "Reisegutschein im Wert von CHF 1500"
             }
-        }
+        },
+        "good_luck": "Viel Glück!"
     },
     "form": {
         "gender": {
@@ -93,7 +94,7 @@
         "text": "Bitte bestätigen Sie Ihre Teilnahme. Einfach E-Mail in Ihrem Postfach öffnen, auf den Link klicken – schon sind Sie angemeldet."
     },
     "thank_you": {
-        "title": "Wir drücken Ihnen die Daumen, \n{{salutation}}",
+        "title": "{{salutation}}, wir drücken Ihnen die Daumen",
         "text": "Gerne bestätigen wir, dass Sie an unserem Wettbewerb teilnehmen – schön, sind Sie dabei.\n\nBis am 30.09.2019 müssen Sie sich noch gedulden. Dann erfahren Sie per E-Mail, ob Sie gewonnen haben.\n\nVielen Dank für Ihre Teilnahme!",
         "cta_text": "Mehr erfahren",
         "information": {
@@ -187,8 +188,8 @@
             "opening_hours": "Montag bis Freitag zwischen 8 und 18 Uhr."
         },
         "salutation": {
-            "female": "sehr geehrte Frau {{lastName}}",
-            "male": "sehr geehrter Herr {{lastName}}"
+            "female": "Sehr geehrte Frau {{lastName}}",
+            "male": "Sehr geehrter Herr {{lastName}}"
         }
     },
     "footernav": {
@@ -211,7 +212,7 @@
     },
     "email": {
         "subject": "Wettbewerb: Ein Klick und Sie sind dabei",
-        "preheader-text": "Sollte das E-Mail nicht korrekt angezeigt werden, klicken Sie hier.",
+        "preheader-text": "Jetzt mitmachen und Gutschein im Wert von CHF 1500 gewinnen.",
         "hero-title": "Wettbewerb: Ein Klick und Sie sind dabei",
         "main-message": "",
         "follow-text": "Für Ihre Teilnahme am Wettbewerb klicken Sie bitte auf folgenden Link:",

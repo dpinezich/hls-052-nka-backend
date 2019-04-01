@@ -26,7 +26,7 @@
     "intro": {
         "ausland": {
             "title": "Avez-vous besoin de changer de décor ?",
-            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon de voyage d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer.\n\nBonne chance !",
+            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon de voyage d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer.",
             "win": {
                 "title": "A gagner :",
                 "text": "bon de voyage d’une valeur de 1500 francs"
@@ -34,7 +34,7 @@
         },
         "complementary_medicine": {
             "title": "Souhaitez-vous retrouver votre équilibre ?",
-            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon pour un week-end de remise en forme d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer. \n\nBonne chance !",
+            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon pour un week-end de remise en forme d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer. ",
             "win": {
                 "title": "A gagner :",
                 "text": "week-end de remise en forme d’une valeur de 1500 francs"
@@ -42,12 +42,13 @@
         },
         "wettbewerb": {
             "title": "Avez-vous besoin d’un nouveau tapis ?",
-            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon de voyage d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer.\n\nBonne chance !",
+            "text": "Participez à notre concours et, avec un peu de chance, gagnez un bon de voyage d’une valeur de 1500 francs ! C’est tout simple : compléter et envoyer.",
             "win": {
                 "title": "A gagner :",
                 "text": "bon de voyage d’une valeur de 1500 francs"
             }
-        }
+        },
+        "good_luck": "Bonne chance !"
     },
     "form": {
         "gender": {
@@ -93,7 +94,7 @@
         "text": "Veuillez confirmer votre participation. Ouvrez simplement l’e-mail dans votre boîte de réception, cliquer sur le lien – et vous participez à notre concours."
     },
     "thank_you": {
-        "title": "Nous vous souhaitons bonne chance,\n{{salutation}}!",
+        "title": "{{salutation}}, nous vous tenons les pouces !",
         "text": "Nous confirmons votre participation à notre concours. Merci !\n\nVeuillez patienter jusqu’au 30 septembre 2019. Vous saurez alors par e-mail si vous avez gagné.\n\nMerci de votre participation !",
         "cta_text": "En savoir plus",
         "information": {
@@ -187,8 +188,8 @@
             "opening_hours": "Du lundi au vendredi de 8h à 18h."
         },
         "salutation": {
-            "female": "Madame",
-            "male": "Monsieur"
+            "female": "Madame {{lastName}}",
+            "male": "Monsieur {{lastName}}"
         }
     },
     "footernav": {
@@ -211,7 +212,7 @@
     },
     "email": {
         "subject": "Concours : un clic suffit",
-        "preheader-text": "Si l’e-mail ne s’affiche pas correctement, cliquez ici.",
+        "preheader-text": "Participer maintenant et gagner un bon d’une valeur de 1500 francs.",
         "hero-title": "Concours : un clic suffit",
         "main-message": "",
         "follow-text": "Pour participer au concours, cliquez simplement sur le lien suivant :",

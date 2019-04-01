@@ -182,7 +182,7 @@ module.exports = app => {
       if(!error){
         // Entity inserted
         let currentTime = new Date().getTime();
-        console.log('Mail was given to TableStorage ' + dataFromFile[token].email, ' ', currentTime);
+        console.log('Mail is sent to TableStorage ' + dataFromFile[token].email, ' Unix Timestamp: ', currentTime);
       } else {
         console.log(error);
       }

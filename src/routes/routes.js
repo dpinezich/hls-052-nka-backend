@@ -98,7 +98,7 @@ module.exports = app => {
           break;
       }
 
-      dataToSave.salutation = get(JSON.parse(translations), `thank_you.salutation.${gender}`).replace('{{lastName}}', last_name);
+      dataToSave.salutation = get(JSON.parse(translations), `email.salutation.${gender}`).replace('{{lastName}}', last_name);
       dataToSave.subject = req.body.subject = get(JSON.parse(translations), "email.subject");
       dataToSave.textBody = req.body.textBody = get(JSON.parse(translations), "email.textBody");
       dataToSave.htmlBody = req.body.htmlBody = replaceAllInEmail(emailHtmlBody, dataToSave);

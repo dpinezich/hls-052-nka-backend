@@ -1,6 +1,7 @@
 import "dotenv/config";
+import azure from "azure-storage";
 import fs from "fs";
-import { mailer } from "../mailer";
+// import { mailer } from "../mailer";
 import {
   successResponse,
   fileNotExist,
@@ -13,6 +14,8 @@ import get from "lodash.get";
 import path from "path";
 
 const fileName = process.env.FILENAME;
+const tableSvc = azure.createTableService(process.env.STORAGE_ACCOUNT, process.env.STORAGE_ACCESS);
+const entGen = azure.TableUtilities.entityGenerator;
 
 module.exports = app => {
   app.get("/", (req, res) => {
@@ -117,7 +120,7 @@ module.exports = app => {
         saveData(allData, dataToSave, token);
       }
 
-      mailer.sendConfirmationMail(url, dataToSave);
+      // mailer.sendConfirmationMail(url, dataToSave);
 
       return successResponse(res, {
         msg: "done"
@@ -161,6 +164,29 @@ module.exports = app => {
     dataFromFile[token] = clientData;
     dataFromFile[token]["validated"] = 0;
     fs.writeFile(fileName, JSON.stringify(dataFromFile), error => {});
+
+    // Add data to TableStorage
+    const task = {
+      PartitionKey: entGen.String(dataFromFile[token].camp),
+      RowKey: entGen.String(token),
+      FIRST_NAME: entGen.String(dataFromFile[token].first_name),
+      LAST_NAME: entGen.String(dataFromFile[token].last_name),
+      EMAIL: entGen.String(dataFromFile[token].email),
+      EMAILSENT: entGen.Int32(0),
+      LINK: entGen.String(dataFromFile[token].link),
+      LANGUAGE: entGen.String(dataFromFile[token].lang),
+      GENDER: entGen.String(dataFromFile[token].gender),
+    };
+
+    tableSvc.insertEntity('NKA',task, function (error, result, response) {
+      if(!error){
+        // Entity inserted
+        let currentTime = new Date().getTime();
+        console.log('Mail was given to TableStorage ' + dataFromFile[token].email, ' ', currentTime);
+      } else {
+        console.log(error);
+      }
+    });
   }
 
   function sendEmail({ name, email, url }) {}

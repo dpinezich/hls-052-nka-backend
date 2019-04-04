@@ -10,9 +10,9 @@
     "build": "babel src --out-dir dist",
     "start-emails": "gulp",
     "emails-build": "gulp build --production",
-    "build-prod": "npm run build && cp package.json dist/package.json && cp .env.sample dist/.env.sample && npm run copy-email-files",
+    "build-prod": "rm -rf dist && npm run build && cp package.json dist/package.json && cp .env.sample dist/.env.sample && npm run copy-email-files",
     "copy-email-files": "npm run emails-build && mkdir dist/emails && cp -R emails/dist dist/emails/dist && cp -R emails/locales dist/emails",
-    "helsana": "rm -rf dist && npm run build-prod && zip -r nka-backend-`date +%Y-%m-%d-%H-%M`.zip dist"
+    "helsana": "npm run build-prod && zip -r nka-backend-`date +%Y-%m-%d-%H-%M`.zip dist"
   },
   "author": "",
   "license": "ISC",

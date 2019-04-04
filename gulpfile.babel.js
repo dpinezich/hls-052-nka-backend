@@ -8,10 +8,6 @@ import lazypipe from "lazypipe";
 import inky from "inky";
 import fs from "fs";
 import siphon from "siphon-media-query";
-import path from "path";
-import merge from "merge-stream";
-import beep from "beepbeep";
-import colors from "colors";
 import inlineimg from "gulp-inline-image";
 import ext_replace from "gulp-ext-replace";
 

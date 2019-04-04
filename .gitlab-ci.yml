@@ -6,5 +6,6 @@ deploy_production:
   only:
     - master
   script:
+    - npm install && npm run build-prod
     - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/hls-052-nka-backend.git
     - git push -f heroku master

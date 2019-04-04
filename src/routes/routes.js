@@ -1,7 +1,6 @@
 import "dotenv/config";
 import azure from "azure-storage";
 import fs from "fs";
-// import { mailer } from "../mailer";
 import {
   successResponse,
   fileNotExist,

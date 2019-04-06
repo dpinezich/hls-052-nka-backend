@@ -30,7 +30,7 @@ process.on('unhandledRejection', function(reason) {
 /**
  * ROUTES
  */
-import routes from './routes';
+import routes from './src/routes';
 routes(app);
 
 /**
